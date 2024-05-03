@@ -1,0 +1,26 @@
+/* Styles for the aspect pages*/
+
+.information-text {
+    /* TODO*/
+}
+
+.informatio-point {
+    /* TODO*/
+}
+
+
+.tag {
+    display: inline-block;
+    padding: var(--border-width-xs) var(--border-width);
+    border-radius: var(--border-radius);
+    width: 60px;
+    min-height: 40px;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}

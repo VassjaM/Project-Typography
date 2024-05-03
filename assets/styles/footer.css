@@ -1,0 +1,13 @@
+/* Styles for sticky footer with basic information */
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding-top: var(--xs);
+    padding-bottom: var(--xxs);
+    background-color: var(--darker);
+    font-size: var(--xs);
+}
+
+.footer * {
+    color: var(--light);
+}
