@@ -1,3 +1,3 @@
-# Praxisprojekt mit dem Thema Typographie im Web an der Technischen Hochschule Köln
+# Praxisprojekt mit dem Thema Typographie im Web an der Technischen Hochschule Köln 2024
 
-Made by Vassilij Misenko
+Made By Vassilij Misenko 

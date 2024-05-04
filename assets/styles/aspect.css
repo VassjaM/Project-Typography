@@ -1,4 +1,20 @@
 /* Aspect styling with image, title, number overlay and description*/
+.introduction-text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: var(--fluid-space-m);
+}
+
+.introduction-box {
+    display: flex;
+}
+
+.introduction-box img {
+    width: 30%;
+    height: 30%;
+}
+
 .aspect-wrap {
     justify-content: center;
     display: flex;
