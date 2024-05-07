@@ -8,33 +8,6 @@
     padding-bottom: var(--fluid-space-m);
 }
 
-
-
-.tag {
-    display: inline-block;
-    padding: var(--border-width-xs) var(--border-width);
-    border-radius: var(--border-radius);
-    width: 80px;
-    min-height: 40px;
-}
-
-.easy {
-    background-color: green;
-}
-
-.medium {
-    background-color: yellow;
-}
-
-.hard {
-    background-color: orange;
-}
-
-.very-hard {
-    background-color: red;
-}
-
-
 .main-text {
     font-size: 1.2rem;
     font-weight: 250;

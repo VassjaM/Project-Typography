@@ -30,7 +30,7 @@ h1,
 h2,
 h3,
 h4 {
-    margin-bottom: var(--m);
+    margin-bottom: var(--l);
     color: var(--headline-color);
     font-family: var(--font-family-headlines);
     font-weight: var(--fw-bold);
@@ -41,8 +41,8 @@ h4 {
 
 h1 {
     text-align: center;
-    margin-top: var(--fluid-space-m);
-    font-size: var(--xxxl);
+    margin-top: var(--fluid-space-l);
+    font-size: 4.5rem;
 }
 
 h2 {
@@ -79,13 +79,7 @@ p {
     margin-bottom: var(--xs);
 }
 
-p + h2 {
-    margin-top: var(--l);
-}
 
-p + h3 {
-    margin-top: var(--l);
-}
 
 a:link, a:visited {
     text-decoration: none;

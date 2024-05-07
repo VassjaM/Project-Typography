@@ -1,25 +1,8 @@
 /* Aspect styling with image, title, number overlay and description*/
-.introduction-text {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    margin-bottom: var(--fluid-space-m);
-}
-
-.introduction-box {
-    display: flex;
-}
-
-.introduction-box img {
-    width: 30%;
-    height: 30%;
-}
-
 .aspect-wrap {
     justify-content: center;
     display: flex;
     padding-bottom: var(--fluid-space-m);
-    
 }
 
 .aspect-image {
@@ -28,13 +11,24 @@
 }
 
 
-.aspect-image img {
+.aspect-image-right img {
     width: 100%;
     height: auto;
     vertical-align: middle;
+    border-top-right-radius: var(--small);
+    border-bottom-right-radius: var(--small);
 }
 
-.aspect-image .image-overlay::before {
+.aspect-image-left img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    border-top-left-radius: var(--small);
+    border-bottom-left-radius: var(--small);
+}
+
+
+.aspect-image-left .image-overlay::before {
     content: "";
     position: absolute;
     top: 0;
@@ -42,7 +36,22 @@
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.7); 
+    border-top-left-radius: var(--small);
+    border-bottom-left-radius: var(--small);
 }
+
+.aspect-image-right .image-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border-top-right-radius: var(--small);
+    border-bottom-right-radius: var(--small);
+}
+
 
 .number-overlay {
     position: absolute;
@@ -56,12 +65,23 @@
 .aspect-information {
     flex: 0 0 auto;
     width: 50%;
+    
 }
 
-.information-backg {
+.information-backg-right {
     background-color: black;
     text-align: center;
     height: 100%;
+    border-top-right-radius: var(--small);
+    border-bottom-right-radius: var(--small);
+}
+
+.information-backg-left {
+    background-color: black;
+    text-align: center;
+    height: 100%;
+    border-top-left-radius: var(--small);
+    border-bottom-left-radius: var(--small);
 }
 
 .information-display {
