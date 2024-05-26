@@ -8,3 +8,99 @@
     padding-bottom: var(--fluid-space-m);
 }
 
+
+
+
+
+/*Styles for the Bento Box Grid System*/
+h4, h5 {
+    background-color: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: auto;
+}
+
+.grid-container {
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    max-width: 900px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    gap: .5rem;
+    grid-template-areas:
+        "a b b b"
+        "a c d o"
+        "f f e o"
+        "u u u u"
+}
+
+.grid-item {
+    background-color: rgb(23,24,28);
+    padding: .5rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: .75rem;
+    overflow: hidden;
+    transition: all 200ms ease;
+}
+
+.grid-item:hover {
+    cursor: pointer;
+    background-color: rgb(59, 59, 61);
+    outline: 2px solid rgb(59, 59, 61);
+}
+
+.grid-item-1 {
+    grid-area: a;
+}
+
+.grid-item-2 {
+    grid-area: b;
+}
+
+.grid-item-3 {
+    grid-area: c;
+}
+
+.grid-item-4 {
+    grid-area: d;
+}
+
+.grid-item-5 {
+    grid-area: o;
+}
+
+.grid-item-6 {
+    grid-area: f;
+}
+
+.grid-item-7 {
+    grid-area: e;
+}
+
+.grid-item-8 {
+    grid-area: u;
+}
+
+
+@media (max-width: 540px) {
+    .grid-container {
+        grid-template-areas:
+            "d c"
+            "b b"
+            "a a"
+            "o o"
+            "f e"
+            "u u"
+    }
+
+    .grid-item {
+        padding: .75rem 1rem;
+    }
+}
+
+
+

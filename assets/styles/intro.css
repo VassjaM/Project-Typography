@@ -1,4 +1,6 @@
+/* introduction box and text styles for the landing page*/
 
+/* introduction box with images*/
 .intro {
     background-color: rgb(23,24,28);
     display: flex;
@@ -32,7 +34,7 @@
 }
 
 
-
+/* introduction text*/
 .info {
     display: flex;
     justify-content: space-evenly;
