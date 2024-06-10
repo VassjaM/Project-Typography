@@ -1,0 +1,30 @@
+/* styling for info title and text */
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    padding-top: 120px;
+    text-align: center;
+}
+
+.info-container h2 {
+   font-size: var(--font-size-m);
+   padding-bottom: 20px;
+}
+
+.info-container p {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-catch-text);
+    letter-spacing: var(--catch-text-spacing);
+    line-height: var(--catch-text-line-height);
+    max-width: 30%;
+ }
+
+
+/* responsive size for phones */
+@media screen and (max-width: 600px) {
+    /* todo */
+}
