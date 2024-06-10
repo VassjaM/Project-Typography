@@ -1,0 +1,185 @@
+/* styling for the landing page intro title, text and example */
+
+/* title and text */
+.title-card {
+    text-align: center;
+    padding-top: 168px;
+    padding-bottom: 168px;
+}
+
+
+.title-card h1 {
+    padding-bottom: 42px;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+    
+}
+
+.title-card p {
+    font-size: var(--font-size-s);
+}
+
+/* title animation for fadeIn */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(+40%);
+    }
+}
+
+
+/* catch-title, text and example */
+.catch-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    position: relative;
+}
+
+/* catch title and text  */
+.catch-container > .catch-info {
+    width: 50%;
+    padding: 7.5% 10% 10% 15%;
+    text-align: center;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.catch-container > .catch-info h2 {
+    line-height: var(--catch-title-line-height);
+    padding-bottom: 20px;
+    letter-spacing: var(--catch-title-spacing);
+}
+
+.catch-container > .catch-info p {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-catch-text);
+    letter-spacing: var(--catch-text-spacing);
+    line-height: var(--catch-text-line-height);
+}
+
+/* catch example */
+.catch-container > .catch-example {
+    background-color: rgb(224, 224, 224);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    height: 600px;
+    width: 50%;
+    align-items: center;
+    justify-content: space-around;
+    display: grid;
+    grid-template-areas: 
+        "example-1 example-2"
+        "example-3 example-4";
+}
+
+/* fonts and adjustements for example */
+.example-font-1 {
+    grid-area: example-1;
+    font-family: var(--font-family-example-1);
+    font-size: 50px;
+}
+
+.example-font-2 {
+    grid-area: example-2;
+    font-family: var(--font-family-example-2);
+    font-size: 60px;
+}
+
+
+.example-font-3 {
+    grid-area: example-3;
+    font-family: var(--font-family-example-3);
+    font-size: 45px;
+}
+
+.example-font-4 {
+    grid-area: example-4;
+    font-family: var(--font-family-example-4);
+    font-size: 50px;
+}
+
+/* box styling for each example */
+.grid-example-box {
+    background-color: rgb(196, 196, 196);
+    border-radius: 25px;
+    padding: 30px;
+    height: 190px;
+    text-align: center;
+    justify-content: center;
+    line-height: 65px;
+}
+
+
+/* responsive size for phones */
+@media screen and (max-width: 600px) {
+    .title-card {
+        padding-top: 113;
+        padding-bottom: 113px;
+    }
+    .catch-container {
+        flex-direction: column;
+    }
+    .catch-container > .catch-info {
+        padding: 20px;
+        padding-bottom: 90px;
+        width: 100%;
+    }
+    .catch-container > .catch-example {
+        background-color: var(--color-secondary-background);
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+        height: 400px;
+        width: 100%;
+        align-items: center;
+        display: grid;
+        grid-template-areas: 
+            "example-1"
+            "example-2"
+            "example-3"
+            "example-4"
+            ;
+    }
+    .grid-example-box {
+        background-color: var(--color-secondary-background);
+        border-radius: 0px;
+        padding: 0px;
+        height: 50px;
+        text-align: center;
+        justify-content:center;
+    }
+    .example-font-1 {
+        grid-area: example-1;
+        font-family: var(--font-family-example-1);
+        font-size: 30px;
+    }
+    
+    .example-font-2 {
+        grid-area: example-2;
+        font-family: var(--font-family-example-2);
+        font-size: 45px;
+    }
+    
+    
+    .example-font-3 {
+        grid-area: example-3;
+        font-family: var(--font-family-example-3);
+        font-size: 27px;
+    }
+    
+    .example-font-4 {
+        grid-area: example-4;
+        font-family: var(--font-family-example-4);
+        font-size: 31px;
+    }
+    br {
+        display: none;
+    }
+
+}
