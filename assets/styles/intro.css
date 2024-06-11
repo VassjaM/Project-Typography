@@ -133,6 +133,13 @@
     .title-card {
         padding: 113px 20px;
     }
+    .title-card h1 {
+        letter-spacing: -3.8px;
+        line-height: 1.1em;
+    }
+    .title-card p {
+        font-size: var(--font-size-s);
+    }
     .catch-container {
         flex-direction: column;
     }
