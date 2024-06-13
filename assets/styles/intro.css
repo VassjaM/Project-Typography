@@ -53,6 +53,7 @@
 
 .catch-container > .catch-info > .catch-info-inner {
     width: 400px;
+    padding: 20px;
 }
 
 .catch-container > .catch-info h2 {
