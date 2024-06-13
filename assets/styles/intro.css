@@ -122,7 +122,7 @@
 }
 
 /* responsive size for medium screens */
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1460px) {
     /* TODO */
 }
 
@@ -138,7 +138,7 @@
         line-height: 1.1em;
     }
     .title-card p {
-        font-size: var(--font-size-s);
+        font-size: 20px;
     }
     .catch-container {
         flex-direction: column;
