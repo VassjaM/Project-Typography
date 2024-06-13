@@ -192,6 +192,7 @@
     }
     .catch-container > .catch-info > .catch-info-inner {
         width: 100%;
+        padding: 0px;
     }
     .catch-container > .catch-example {
         background-color: var(--color-secondary-background);

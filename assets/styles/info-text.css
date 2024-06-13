@@ -17,14 +17,16 @@
 
 
 .info-container > .info-text p{
-    max-width: 500px;
     text-align: center;
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-medium);
     color: var(--color-catch-text);
     letter-spacing: var(--catch-text-spacing);
     line-height: var(--catch-text-line-height);
+    max-width: 500px;
 }
+
+
 
 /* responsive size for phones */
 @media screen and (max-width: 600px) {
@@ -36,6 +38,12 @@
         letter-spacing: -2.1px;
         line-height: 1.1em;
     }
+    .info-container > .info-text p {
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 800px) {
     .info-container > .info-text p {
         text-align: left;
     }
