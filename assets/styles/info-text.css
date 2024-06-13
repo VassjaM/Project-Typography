@@ -26,12 +26,6 @@
     line-height: var(--catch-text-line-height);
 }
 
- /* responsive size for medium screens */
-@media screen and (max-width: 1460px) {
-    /* TODO */
-}
-
-
 /* responsive size for phones */
 @media screen and (max-width: 600px) {
     .info-container {

@@ -1,4 +1,5 @@
 /* styling for roadmap */
 
 .roadmap-container {
+    background-color: var(--color-secondary-background);
 }
