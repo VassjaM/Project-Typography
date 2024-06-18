@@ -1,5 +1,6 @@
 /* styling for roadmap */
 
+/* container for all aspect points */
 .roadmap-container {
     background-color: var(--color-secondary-background);
     display: flex;
@@ -9,6 +10,7 @@
     padding: 100px 0 50px;
 }
 
+/* aspect container for image and information */
 .aspect-container {
     display: flex;
     width: 1000px;
@@ -16,6 +18,7 @@
     margin-bottom: 100px;
 }
 
+/* image for aspect */
 .aspect-image {
     width: 50%;
 }
@@ -27,7 +30,7 @@
     height: 356px;
 }
 
-
+/* information for aspect with title, text and button */
 .aspect-information {
     width: 50%;
     display: flex;
