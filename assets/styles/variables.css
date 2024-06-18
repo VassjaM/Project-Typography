@@ -10,8 +10,8 @@
     --color-white: white;
     --color-black: black;
 
-    --color-primary-background: #f1f1f1;
-    --color-secondary-background: rgb(221, 221, 221);
+    --color-primary-background: var(--color-white);
+    --color-secondary-background: #f7f7f7;
     --color-catch-background: rgb(23, 24, 28);
     --color-navbar-background: rgb(23, 24, 28);
     --color-footer-background: rgb(34, 34, 34);
@@ -45,7 +45,7 @@
     --font-size-l: 56px;  /* 56px */
     --font-size-xl: 100px; /* 83px */
 
-    /* font sizes for the examples in intro card*/
+    /* font sizes for the examples in intro card */
     --font-size-example-1: 50px;
     --font-size-example-2: 60px;
     --font-size-example-3: 45px;

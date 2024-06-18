@@ -72,8 +72,6 @@
 
 /* catch example */
 .catch-container > .catch-example {
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
     height: 500px;
     width: 50%;
     align-items: center;

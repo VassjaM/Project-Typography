@@ -14,7 +14,7 @@ body {
     background-color: var(--color-primary-background);
 }
 
-li, a, button {
+li, a {
     font-weight: var(--font-weight-medium);
     font-size: var(--font-size-xs);
     color: var(--color-white);
@@ -32,5 +32,12 @@ h2 {
     font-family: var(--font-family-body);
     color: var(--color-catch-title);
     font-size: var(--font-size-l);
+    font-weight: var(--font-weight-bold);
+}
+
+h3 {
+    font-family: var(--font-family-body);
+    color: var(--color-catch-title);
+    font-size: var(--font-size-m);
     font-weight: var(--font-weight-bold);
 }

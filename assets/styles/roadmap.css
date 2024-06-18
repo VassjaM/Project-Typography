@@ -2,4 +2,63 @@
 
 .roadmap-container {
     background-color: var(--color-secondary-background);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0 50px;
+}
+
+.aspect-container {
+    display: flex;
+    width: 1000px;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.aspect-image {
+    width: 50%;
+}
+
+.aspect-image > img {
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+    height: 356px;
+}
+
+
+.aspect-information {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.aspect-information h3 {
+    letter-spacing: -2.1px;
+}
+
+.aspect-information p {
+    width: 300px;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-medium);
+    line-height: var(--catch-text-line-height);
+    color: var(--color-catch-text);
+    letter-spacing: -0.7px;
+}
+
+.button {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    display: flex;
+    width: 119px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 8px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semi-bold);
 }
