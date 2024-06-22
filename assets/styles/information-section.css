@@ -1,0 +1,71 @@
+/* styling for the information section with questions and answers about the roadmap */
+
+.information-container {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    max-width: 320px;
+}
+
+.question-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 .7961918735236395px 2.3885756205709185px -.625px #0000000d,
+        0 2.414506143104518px 7.2435184293135535px -1.25px #0000000d,
+        0 6.382653521484461px 19.147960564453385px -1.875px #0000000d,
+        0 20px 60px -2.5px #0000000d;
+    gap: 20px;
+}
+
+.question-title {
+    font-size: 20px;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.8px;
+    line-height: 1.4em;
+    text-align: left;
+    color: rgb(51, 51, 51);
+}
+
+.answer-text {
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.6em;
+    text-align: left;
+    color: rgb(102, 102, 102);
+}
+
+
+
+/* responsive size for smaller screens */
+@media screen and (max-width: 1100px) { 
+    .information-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .column-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+    }
+    .question-card {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+}
