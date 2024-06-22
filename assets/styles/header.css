@@ -18,15 +18,9 @@
 /* contact button  */
 .nav-button {
     padding: 9px 25px;
-    background-color: rgba(0, 136, 169, 1);
     border: none;
-    border-radius: 8px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
-}
-
-.nav-button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
 }
 
 /* responsive size for phones */
