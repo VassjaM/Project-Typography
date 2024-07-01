@@ -23,6 +23,12 @@
     transition: all 0.3s ease 0s;
 }
 
+.logo {
+    height: 30px;
+    width: 30px;
+    margin-left: 25px;
+}
+
 /* responsive size for phones */
 @media screen and (max-width: 600px) {
     .primary-header {
