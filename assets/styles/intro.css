@@ -70,57 +70,66 @@
     line-height: var(--catch-text-line-height);
 }
 
-/* catch example */
-.catch-container > .catch-example {
-    height: 500px;
+
+/* font showcase example */
+.catch-example {
     width: 50%;
     align-items: center;
     justify-content: space-around;
-    display: grid;
-    grid-template-areas: 
-        "example-1 example-2"
-        "example-3 example-4";
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-/* fonts and adjustements for example */
-.example-font-1 {
-    grid-area: example-1;
+.example {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+.example-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-white);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 .7961918735236395px 2.3885756205709185px -.625px #0000000d,
+        0 2.414506143104518px 7.2435184293135535px -1.25px #0000000d,
+        0 6.382653521484461px 19.147960564453385px -1.875px #0000000d,
+        0 20px 60px -2.5px #0000000d;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+.font-1 {
     font-family: var(--font-family-example-1);
     font-size: var(--font-size-example-1);
 }
 
-.example-font-2 {
-    grid-area: example-2;
+.font-2 {
     font-family: var(--font-family-example-2);
     font-size: var(--font-size-example-2);
+    line-height: 55px;
 }
 
-
-.example-font-3 {
-    grid-area: example-3;
+.font-3 {
     font-family: var(--font-family-example-3);
     font-size: var(--font-size-example-3);
+    font-weight: 700;
 }
 
-.example-font-4 {
-    grid-area: example-4;
+.font-4 {
     font-family: var(--font-family-example-4);
     font-size: var(--font-size-example-4);
 }
 
-/* box styling for each example */
-.grid-example-box {
-    padding: 30px;
-    height: 190px;
-    text-align: center;
-    line-height: 65px;
-    border-radius: 25px;
-    background: #e0e0e0;
-}
 
 
 /* responsive size for medium screens */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1300px) {
     .catch-container {
         display: flex;
         flex-direction: column;
@@ -140,28 +149,29 @@
         width: 600px;
         padding-bottom: 60px;
     }
-    .catch-container > .catch-example {
-        height: 100%;
-        width: 600px;
-        align-items: center;
-        justify-content: space-around;
-        display: grid;
-        grid-gap: 20px;
-        grid-template-areas: 
-            "example-1 example-2"
-            "example-3 example-4";
-    }
-    .grid-example-box {
-        padding: 30px;
-        height: 190px;
-        text-align: center;
-        line-height: 65px;
-        border-radius: 25px;
-        background: #e0e0e0;
-    }
-    
 }
 
+
+/* responsive size for example fonts */
+@media screen and (max-width: 700px) {
+    .example {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .catch-example {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .example-box {
+        width: 100%;
+    }
+    .example-box > p > br {
+        display: none;
+    }
+}
 
 
 /* responsive size for phones */
@@ -188,56 +198,4 @@
         width: 100%;
         padding: 0px;
     }
-    .catch-container > .catch-example {
-        background-color: #e0e0e0;
-        border-top-left-radius: 0px;
-        border-bottom-left-radius: 0px;
-        height: 400px;
-        width: 100%;
-        align-items: center;
-        display: grid;
-        grid-template-areas: 
-            "example-1"
-            "example-2"
-            "example-3"
-            "example-4"
-            ;
-    }
-    .grid-example-box {
-        border-radius: 0px;
-        padding: 0px;
-        height: 50px;
-        text-align: center;
-        justify-content:center;
-        border-radius: 25px;
-        box-shadow:  none;
-    }
-    .example-font-1 {
-        grid-area: example-1;
-        font-family: var(--font-family-example-1);
-        font-size: 30px;
-    }
-    
-    .example-font-2 {
-        grid-area: example-2;
-        font-family: var(--font-family-example-2);
-        font-size: 45px;
-    }
-    
-    
-    .example-font-3 {
-        grid-area: example-3;
-        font-family: var(--font-family-example-3);
-        font-size: 27px;
-    }
-    
-    .example-font-4 {
-        grid-area: example-4;
-        font-family: var(--font-family-example-4);
-        font-size: 31px;
-    }
-    br {
-        display: none;
-    }
-
 }
