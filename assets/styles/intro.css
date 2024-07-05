@@ -17,6 +17,11 @@
 
 .title-card p {
     font-size: var(--font-size-s);
+    font-weight: var(--font-weight-medium);
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 /* title animation for fadeIn */
