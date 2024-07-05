@@ -47,7 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 8em;
+    margin-bottom: 180px;
 }
 
 .evaluation-container {
@@ -148,7 +148,9 @@
     }
 
 
-
+    .center-container {
+        margin-bottom: 130px;
+    }
     
     .evaluation-container {
         margin: 0 6%;

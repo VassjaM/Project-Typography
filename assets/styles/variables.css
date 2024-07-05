@@ -45,6 +45,8 @@
     --font-size-l: 56px;  /* 56px */
     --font-size-xl: 100px; /* 83px */
 
+    --font-size-text: 22px;
+
     /* font sizes for the examples in intro card */
     --font-size-example-1: 40px;
     --font-size-example-2: 50px;
@@ -68,6 +70,7 @@
     --primary: #4690f0;
     --secondary: #ffa49f;
     --accent: #f26172;
+    --accent-light: #ECF0F2;
 
     
 }
@@ -79,7 +82,9 @@
         --font-size-s: 24px;  
         --font-size-m: 50px;  
         --font-size-l: 50px;  
-        --font-size-xl: 60px; 
+        --font-size-xl: 60px;
+
+        --font-size-text: 20px;
     }
 }
 

@@ -1,0 +1,80 @@
+ /* styling for the information text of aspect */
+
+.information-text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8em;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-point {
+    margin-bottom: 150px;
+}
+
+.info-point h4{
+    font-size: var(--font-size-m);
+    color: var(--text);
+    padding-bottom: 40px;
+    line-height: var(--catch-title-line-height);
+    letter-spacing: -2.1px;
+}
+
+.info-point p{
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-regular);
+    color: var(--text);
+    padding-bottom: 30px;
+}
+
+.info-image {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.info-image img {
+    border-radius: 1rem;
+    width: 50%;
+}
+
+.info-image-text {
+    width: 50%;
+    background-color: var(--secondary);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .information-text-container {
+        margin: 0 6%;
+    }
+    .info-point {
+        margin-bottom: 80px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .information-text-container {
+        margin: 0 20px;
+    }
+    .info-point {
+        margin-bottom: 80px;
+    }
+
+    .info-image {
+        flex-direction: column;
+    }
+    
+    .info-image img {
+        width: 100%;
+    }
+}
