@@ -1,0 +1,215 @@
+/* styling for every aspect page */
+
+/* Title, text and image */
+.title-head {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+}
+
+.title-info-inner {
+    width: 400px;
+}
+
+.title-info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+
+.title-info p {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-medium);
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.title-image {
+    width: 50%;
+}
+
+.title-image img {
+    border-bottom-left-radius: 25px;
+}
+
+
+
+/* Evaluation part of aspect */
+/* centering and adding grid system */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8em;
+}
+
+.evaluation-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8em;
+}
+
+.evaluation-grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50% 50%;
+    width: 100%;
+}
+
+/* precise placement and coloring */
+/* title and subtext*/
+.evaluation-title {
+    grid-area: 1 / 1 / 2 / 7;
+}
+
+.evaluation-title h2 {
+    color: var(--color-white);
+}
+
+.evaluation-title p {
+    color: var(--color-white);
+}
+
+/* title and subtext */
+.evaluation-first {
+    grid-area: 2 / 1 / 2 / 4;
+}
+
+.evaluation-first h3 {
+    color: var(--text);
+}
+
+.evaluation-first p {
+    color: var(--text);
+}
+
+/* title and subtext */
+.evaluation-second {
+    grid-area: 2 / 4 / 2 / 7;
+}
+
+.evaluation-second  h3  {
+    color: var(--text);
+}
+
+.evaluation-second  p  {
+    color: var(--text);
+}
+
+/* box card coloring */
+.black-box {
+    background-color: var(--text);
+}
+
+.blue-box {
+    background-color: var(--primary);
+}
+
+.red-box {
+    background-color: var(--accent);
+}
+
+/* inner card orientation and styling */
+.evaluation-card {
+    padding: 5rem 1rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+
+/* responsive design for smaller screen sizes */
+
+@media screen and (max-width: 1000px) {
+
+    .title-head {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    
+    .title-info-inner {
+        width: 100%
+    }
+
+    .title-info {
+        align-items:first baseline;
+        padding: 0 6%;
+    }
+
+
+
+    
+    .evaluation-container {
+        margin: 0 6%;
+    }
+    
+    .evaluation-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .evaluation-title {
+        grid-area: 1 / 1 / 2 / 7;
+    }
+    
+    .evaluation-first {
+        grid-area: 2 / 1 / 2 / 7;
+    }
+    
+    
+    .evaluation-second {
+        grid-area: 3 / 1 / 3 / 7;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 800px) {
+    .title-head {
+        margin-bottom: 100px;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    
+    .title-info-inner {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .title-info {
+        align-items:first baseline;
+        padding: 0 20px;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .title-image {
+        width: 100%;
+    }
+    
+    .title-image img {
+        border-radius: 0;
+    }
+
+
+    .evaluation-container {
+        margin: 0 20px;
+    }
+
+
+
+
+}

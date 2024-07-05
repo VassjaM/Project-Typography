@@ -60,10 +60,20 @@
     --catch-title-line-height: 1.2em;
     --catch-text-line-height: 1.5em;
 
+
+
+    /* colors fo aspect */
+    --text: #020a15;
+    --background: #f9fcfe;
+    --primary: #4690f0;
+    --secondary: #ffa49f;
+    --accent: #f26172;
+
+    
 }
 
-/* font sizes for phones*/
-@media (max-width: 800px) {
+/* font sizes for smaller screens*/
+@media (max-width: 1000px) {
     :root {
         --font-size-xs: 15px; 
         --font-size-s: 24px;  
