@@ -46,6 +46,7 @@
     --font-size-xl: 100px; /* 83px */
 
     --font-size-text: 22px;
+    --font-size-title: 32px;
 
     /* font sizes for the examples in intro card */
     --font-size-example-1: 40px;
@@ -71,6 +72,12 @@
     --secondary: #ffa49f;
     --accent: #f26172;
     --accent-light: #ECF0F2;
+
+    /* colors for cards*/
+    --purple: #F1EBFF;
+    --red: #ffebf2;
+    --blue: #ebefff;
+    --green: #EDF9F2;
 
     
 }

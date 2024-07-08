@@ -1,0 +1,86 @@
+ /* styling for the best practices of aspect */
+
+ .best-practice {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 150px;
+ }
+
+ .best-practice h4 {
+    font-size: var(--font-size-m);
+    color: var(--text);
+    padding-bottom: 40px;
+    line-height: var(--catch-title-line-height);
+    letter-spacing: -2.1px;
+ }
+
+
+.best-practice-container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.best-practice-inner-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.best-practice-card {
+    border-radius: 1rem;
+    padding: 30px;
+    width: 100%;
+}
+
+.best-practice-card h5 {
+    font-size: var(--font-size-title);
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: var(--font-weight-bold);
+    color: #313942;
+    letter-spacing: -0.021em;
+}
+
+.best-practice-card p{
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    letter-spacing: -0.011em;
+    color: #313942;
+    line-height: 1.5em;
+}
+
+.card-color-purple {
+    background-color: #F1EBFF;
+}
+
+.card-color-red {
+    background-color: #ffebf2;
+}
+
+.card-color-blue {
+    background-color: #ebefff;
+}
+
+.card-color-green {
+    background-color: #EDF9F2;
+}
+
+
+@media screen and (max-width: 800px) {
+    .best-practice {
+        margin-bottom: 80px;
+     }
+    .best-practice-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .best-practice-inner-container {
+        width: 100%;
+    }
+    
+}
+
