@@ -1,0 +1,125 @@
+/* styliong for website links cards on aspect page */
+
+.website-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 100px;
+}
+
+.website-links h4 {
+    text-align: center;
+    font-size: var(--font-size-m);
+    color: var(--text);
+    padding-bottom: 40px;
+    line-height: var(--catch-title-line-height);
+    letter-spacing: -2.1px;
+    padding: 20px;
+ }
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.container-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-card {
+    display: flex;
+    flex-direction: column;
+    max-width: 320px;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0.796192px 2.38858px -0.625px,
+    rgba(0, 0, 0, 0.05) 0px 2.41451px 7.24352px -1.25px,
+    rgba(0, 0, 0, 0.05) 0px 6.38265px 19.148px -1.875px,
+    rgba(0, 0, 0, 0.05) 0px 20px 60px -2.5px;
+}
+
+.link-card-top {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    text-align: center;
+    padding: 30px;
+}
+
+.link-card-top h5 {
+    font-size: 33px;
+    margin: 50px 0;
+}
+
+.link-card-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+}
+
+.link-card-bottom h6 {
+    font-size: 20px;
+    font-weight: var(--font-weight-semi-bold);
+    line-height: 1.4em;
+    letter-spacing: -0.5px;
+    margin: 0;
+}
+
+.link-card-bottom p {
+    font-size: 16px;
+    font-weight: var(--font-weight-medium);
+    line-height: 1.6em;
+    color: var(--color-catch-text);
+}
+
+.button {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    display: flex;
+    width: 119px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 8px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semi-bold);
+}
+
+
+
+
+.card-color-purple {
+    background-color: #f1cdfa;
+}
+
+.card-color-red {
+    background-color: #facddc;
+}
+
+.card-color-blue {
+    background-color: #CDD9FA; 
+}
+
+.card-color-green {
+    background-color: #cdfada;
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+    .links-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

@@ -5,10 +5,10 @@
     display: flex;
     flex-direction: column;
     text-align: left;
-    margin-bottom: 150px;
  }
 
  .best-practice h4 {
+    text-align: center;
     font-size: var(--font-size-m);
     color: var(--text);
     padding-bottom: 40px;
@@ -53,27 +53,9 @@
     line-height: 1.5em;
 }
 
-.card-color-purple {
-    background-color: #F1EBFF;
-}
-
-.card-color-red {
-    background-color: #ffebf2;
-}
-
-.card-color-blue {
-    background-color: #ebefff;
-}
-
-.card-color-green {
-    background-color: #EDF9F2;
-}
 
 
 @media screen and (max-width: 800px) {
-    .best-practice {
-        margin-bottom: 80px;
-     }
     .best-practice-container {
         display: flex;
         flex-direction: column;
@@ -81,6 +63,9 @@
     .best-practice-inner-container {
         width: 100%;
     }
+    .best-practice h4 {
+        text-align: left;
+     }
     
 }
 
