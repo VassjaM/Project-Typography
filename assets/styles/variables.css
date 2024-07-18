@@ -21,7 +21,7 @@
 
 
     /* fonts */
-    --font-family-primary: "Inter", sans-serif;
+    --font-family-primary: "Inter",  "Arial" , sans-serif;
     --font-family-body: var(--font-family-primary);
     --font-family-heading: var(--font-family-primary);
 
