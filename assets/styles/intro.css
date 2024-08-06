@@ -2,6 +2,8 @@
 
 /* title and text */
 .title-card {
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding-top: 168px;
     padding-bottom: 168px;
@@ -22,6 +24,8 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    align-self: center;
+    width: 400px;
 }
 
 /* title animation for fadeIn */
