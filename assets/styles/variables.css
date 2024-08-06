@@ -44,6 +44,7 @@
     --font-size-m: 50px;  /* 50px */
     --font-size-l: 56px;  /* 56px */
     --font-size-xl: 100px; /* 83px */
+    --font-size-aspect-title: 80px;
 
     --font-size-text: 22px;
     --font-size-title: 32px;
@@ -82,6 +83,9 @@
     
 }
 
+
+
+
 /* font sizes for smaller screens*/
 @media (max-width: 1000px) {
     :root {
@@ -90,7 +94,7 @@
         --font-size-m: 50px;  
         --font-size-l: 50px;  
         --font-size-xl: 60px;
-
+        --font-size-aspect-title: 60px;
         --font-size-text: 20px;
     }
 }

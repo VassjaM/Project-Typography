@@ -7,9 +7,7 @@
     margin-bottom: 150px;
 }
 
-.title-info-inner {
-    width: 400px;
-}
+
 
 .title-info {
     display: flex;
@@ -20,6 +18,15 @@
     text-align: left;
 }
 
+.title-info-inner {
+    width: 400px;
+}
+
+.title-info h1 {
+    font-size: var(--font-size-aspect-title);
+    line-height: 1;
+    padding-bottom: 40px;
+}
 
 .title-info p {
     font-size: var(--font-size-s);
@@ -145,6 +152,7 @@
     .title-info {
         align-items:first baseline;
         padding: 0 6%;
+        padding-top: 40px;
     }
 
 
@@ -187,13 +195,13 @@
     }
     
     .title-info-inner {
-        width: 100%;
         max-width: 100%;
     }
 
     .title-info {
         align-items:first baseline;
         padding: 0 20px;
+        padding-top: 20px;
         width: 100%;
         max-width: 500px;
     }
