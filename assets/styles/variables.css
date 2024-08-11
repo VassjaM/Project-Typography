@@ -16,8 +16,24 @@
     --color-navbar-background: rgb(23, 24, 28);
     --color-footer-background: rgb(34, 34, 34);
 
-
     --color-button: rgb(34, 34, 34);
+
+    /* colors for aspect */
+    --text: #020a15;
+    --background: #f9fcfe;
+    --primary-blue: #6bafff;  
+    --secondary: #ffa49f;
+    --accent-red:  #ff6b6b;  
+    --accent-light: #ECF0F2;
+    --accent: #f26172;
+    --primary: #4690f0 ;
+
+    /* colors for cards*/
+    --purple: #F1EBFF;
+    --red: #ffebf2;
+    --blue: #ebefff;
+    --green: #EDF9F2;
+
 
 
     /* fonts */
@@ -39,15 +55,19 @@
 
 
     /* font size */
-    --font-size-xs: 15px;  /* 14px maybe das in rem umrechnen später*/  
-    --font-size-s: 24px;  /* 24px */
-    --font-size-m: 50px;  /* 50px */
-    --font-size-l: 56px;  /* 56px */
-    --font-size-xl: 100px; /* 83px */
+    --font-size-xs: 15px;  /*  maybe das in rem umrechnen später*/  
+    --font-size-s: 24px;  
+    --font-size-m: 50px;  
+    --font-size-l: 56px;  
+    --font-size-xl: 100px; 
+    --font-size-title-text: 35px;
     --font-size-aspect-title: 80px;
+    --font-size-info-title: 50px;
 
-    --font-size-text: 22px;
     --font-size-title: 32px;
+    --font-size-text: 22px;
+
+
 
     /* font sizes for the examples in intro card */
     --font-size-example-1: 40px;
@@ -63,23 +83,6 @@
     /* line height */
     --catch-title-line-height: 1.2em;
     --catch-text-line-height: 1.5em;
-
-
-
-    /* colors for aspect */
-    --text: #020a15;
-    --background: #f9fcfe;
-    --primary: #4690f0;
-    --secondary: #ffa49f;
-    --accent: #f26172;
-    --accent-light: #ECF0F2;
-
-    /* colors for cards*/
-    --purple: #F1EBFF;
-    --red: #ffebf2;
-    --blue: #ebefff;
-    --green: #EDF9F2;
-
     
 }
 
@@ -94,8 +97,10 @@
         --font-size-m: 50px;  
         --font-size-l: 50px;  
         --font-size-xl: 60px;
+        --font-size-title-text: 25px;
         --font-size-aspect-title: 60px;
         --font-size-text: 20px;
+        --font-size-info-title: 40px;
     }
 }
 

@@ -14,7 +14,7 @@
 }
 
 .info-point h4{
-    font-size: var(--font-size-m);
+    font-size: var(--font-size-info-title);
     color: var(--text);
     padding-bottom: 40px;
     line-height: var(--catch-title-line-height);
@@ -71,6 +71,10 @@
         margin-bottom: 80px;
     }
 
+    .info-point h4{
+        padding-bottom: 30px;
+    }
+
     .info-image {
         flex-direction: column;
     }
@@ -78,4 +82,5 @@
     .info-image img {
         width: 100%;
     }
+
 }

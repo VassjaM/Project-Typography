@@ -35,6 +35,7 @@
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    hyphens: none; 
 }
 
 
@@ -72,7 +73,6 @@
     grid-gap: 10px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: 50% 50%;
-    width: 100%;
 }
 
 /* precise placement and coloring */
@@ -121,41 +121,23 @@
 }
 
 .blue-box {
-    background-color: var(--primary);
+    background-color: var(--primary-blue);
 }
 
 .red-box {
-    background-color: var(--accent);
+    background-color: var(--accent-red);
 }
 
 /* inner card orientation and styling */
 .evaluation-card {
-    padding: 5rem 1rem;
+    padding: 3rem 1rem;
     text-align: center;
     border-radius: 1rem;
 }
 
 
 /* responsive design for smaller screen sizes */
-
-@media screen and (max-width: 1000px) {
-
-    .title-head {
-        margin-bottom: 100px;
-        width: 100%;
-    }
-    
-    .title-info-inner {
-        width: 100%
-    }
-
-    .title-info {
-        align-items:first baseline;
-        padding: 0 6%;
-        padding-top: 40px;
-    }
-
-
+@media screen and (max-width: 1240px) {
     .center-container {
         margin-bottom: 130px;
     }
@@ -180,6 +162,24 @@
     
     .evaluation-second {
         grid-area: 3 / 1 / 3 / 7;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .title-head {
+        margin-bottom: 100px;
+        width: 100%;
+    }
+    
+    .title-info-inner {
+        width: 100%
+    }
+
+    .title-info {
+        align-items:first baseline;
+        padding: 0 6%;
+        padding-top: 40px;
     }
 }
 

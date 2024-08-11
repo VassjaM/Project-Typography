@@ -45,7 +45,7 @@
 }
 
 .aspect-information p {
-    width: 300px;
+    max-width: 400px;
     font-size: var(--font-size-s);
     font-weight: var(--font-weight-medium);
     line-height: var(--catch-text-line-height);
@@ -96,5 +96,9 @@
         width: 100%;
         border-radius: 25px;
         height: 100%;
+    }
+
+    .aspect-information {
+        width: 100%;
     }
 }

@@ -11,21 +11,20 @@
 
 
 .title-card h1 {
-    padding-bottom: 42px;
+    padding-bottom: 20px;
     animation-name: fadeIn;
     animation-duration: 2s;
     
 }
 
 .title-card p {
-    font-size: var(--font-size-s);
+    font-size: var(--font-size-title-text);
     font-weight: var(--font-weight-medium);
     background: linear-gradient(120deg, var(--primary), var(--accent));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     align-self: center;
-    width: 400px;
 }
 
 /* title animation for fadeIn */
@@ -61,7 +60,7 @@
 }
 
 .catch-container > .catch-info > .catch-info-inner {
-    width: 400px;
+    width: 600px;
     padding: 20px;
 }
 
@@ -69,6 +68,7 @@
     line-height: var(--catch-title-line-height);
     padding-bottom: 20px;
     letter-spacing: var(--catch-title-spacing);
+    line-height: 1.1em;
 }
 
 .catch-container > .catch-info p {
