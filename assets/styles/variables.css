@@ -5,7 +5,8 @@
     /* colors */
     --color-primary-title: rgb(0, 17, 34);
     --color-catch-title: rgb(51, 51, 51);
-    --color-catch-text: rgb(136, 136, 136);
+    --color-catch-text: rgb(117, 117, 117);
+    --color-info-text: rgb(49 57 66);
 
     --color-white: white;
     --color-black: black;
@@ -71,7 +72,7 @@
 
     /* font sizes for the examples in intro card */
     --font-size-example-1: 40px;
-    --font-size-example-2: 50px;
+    --font-size-example-2: 52px;
     --font-size-example-3: 35px;
     --font-size-example-4: 40px;
    

@@ -15,7 +15,7 @@
 
 .info-point h4{
     font-size: var(--font-size-info-title);
-    color: var(--text);
+    color: var(--color-catch-title);
     padding-bottom: 40px;
     line-height: var(--catch-title-line-height);
     letter-spacing: -2.1px;
