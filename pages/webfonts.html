@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typographie im Web</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <link rel="stylesheet" href="../assets/styles/base.css">
     <link rel="stylesheet" href="../assets/styles/header.css">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="../assets/styles/aspect-page-information.css">
     <link rel="stylesheet" href="../assets/styles/aspect-page-best-practice.css">
     <link rel="stylesheet" href="../assets/styles/aspect-page-website-links.css">
+    <link rel="stylesheet" href="../assets/styles/code-snippet.css">
 </head>
 </head>
 
@@ -145,8 +147,20 @@
                     Durch Self-Hosting gibt es keine Abhängigkeiten von externen Servern, wodurch eine dauerhafte Ver4fügbarkeit der Webfonts ermöglicht wird. Ein Nachteil wäre die technische Komplexität bei der Einrichtung,
                     Wartung und Konvertierung von Schriftdateien sowie deren Einbindung in die Webseite.
                 </p>
-                <div class="info-image">
-                    <img src="../assets/img/webfont-example-image.png" alt="Webfont Example Image">
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code>
+@font-face {
+    font-family: 'MyCustomFont';
+    src: url('/fonts/MyCustomFont.woff2') format('woff2'),
+            url('/fonts/MyCustomFont.woff') format('woff'),
+            url('/fonts/MyCustomFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}                              
+                        </code></pre>
+                    </div>
                 </div>
             </div>
 
@@ -162,9 +176,30 @@
                     Diese Schriftarten wurden dann über CSS mit direkten Verweisen auf die entsprechenden Dateien eingebunden. Anschließend konnten sie
                     im Code genauso wie die primäre Schriftart genutzt werden.
                 </p>
-                <div class="info-image">
-                    <img src="../assets/img/import-webfont-example-image.png" alt="Import Webfont Example Image">
-                    <img src="../assets/img/custom-webfont-example-image.png" alt="Custom Webfont Example Image">
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code>
+/* Mit dem Import Befehl aus Google Fonts */
+/* Hier wird als Primary Font Inter importiert */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>
+/* Custom Fonts */
+/* hier mit Verweis auf die Datei im lokalen Ordner */
+
+@font-face {
+    font-display: swap;
+    font-family: LoveLive;
+    font-style: regular;
+    font-weight: 400;
+    src: url("../fonts/love_live/LoveLive-nAxlP.ttf");        
+}
+                        </code></pre>
+                    </div>
                 </div>
             </div>
 
@@ -291,6 +326,7 @@
         </div>
     </footer>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 </body>
 </html>

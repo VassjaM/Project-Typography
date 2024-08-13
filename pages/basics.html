@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typographie im Web</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
     <link rel="stylesheet" href="../assets/styles/reset.css">
     <link rel="stylesheet" href="../assets/styles/base.css">
     <link rel="stylesheet" href="../assets/styles/header.css">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="../assets/styles/aspect-page-information.css">
     <link rel="stylesheet" href="../assets/styles/aspect-page-best-practice.css">
     <link rel="stylesheet" href="../assets/styles/aspect-page-website-links.css">
+    <link rel="stylesheet" href="../assets/styles/code-snippet.css">
 </head>
 
 <body>
@@ -145,10 +147,22 @@
                     Heutzutage werden diese als Fall-Back-Schriften verwendet, wenn die gewählte Schrift nicht geladen werden kann.
                     Nun können aber jegliche Schriftarten im Web verwendet werden.
                 </p>
-                <div class="info-image">
-                    <img src="../assets/img/fall-back-font-example-image.png" alt="Fall-Back Font Example Image">
+
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code>
+/* fonts */
+--font-family-primary: "Inter",  "Arial" , sans-serif;
+
+/* Inter ist die Hauptschriftfamilie */
+/* Arial ist hierbei die Fall-Back Schrift */
+
+                        </code></pre>
+                    </div>
                 </div>
+
             </div>
+
 
             <div class="info-point">
                 <h4>Basics auf dieser Webseite</h4>
@@ -166,8 +180,21 @@
                     wie verschiedene Typografien denselben Text unterschiedlich interpretieren und dadurch verschiedene emotionale Reaktionen hervorrufen können.
                     Diese Gegenüberstellung dient als praktische Illustration der Macht der Typographie in der visuellen Kommunikation.
                 </p>
-                <div class="info-image">
-                    <img src="../assets/img/basics-code-image.png" alt="Code Image">
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code>
+/* fonts */
+--font-family-primary: "Inter",  "Arial" , sans-serif;
+--font-family-body: var(--font-family-primary);
+--font-family-heading: var(--font-family-primary);
+
+--font-family-example-1: "LoveLive";
+--font-family-example-2: "YourMurdererBB";
+--font-family-example-3: "Orbitron";
+--font-family-example-4: "Righteous";
+                        </code></pre>
+                    </div>
                 </div>
             </div>
 
@@ -297,6 +324,8 @@
         </div>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
 </body>
 </html>
