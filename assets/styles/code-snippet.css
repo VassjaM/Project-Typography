@@ -30,5 +30,8 @@ pre, code {
     .code-snippet {
         width: 100%;
     }
+    pre, code {
+        font-size: 13px;
+    }
 }
 
