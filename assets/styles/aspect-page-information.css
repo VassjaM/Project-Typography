@@ -1,12 +1,9 @@
  /* styling for the information text of aspect */
 
 .information-text-container {
-    display: flex;
-    flex-direction: column;
     margin: 0 8em;
     max-width: 1200px;
-    justify-content: center;
-    align-items: center;
+    overflow: auto;
 }
 
 .info-point {

@@ -1,35 +1,28 @@
 
 .code-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     gap: 10px;
     overflow: auto;
 }
 
 .code-snippet {
-    position: relative;
+    display: block;
     padding: 0.5rem;
     border-radius: 1rem;
     background-color: #282c34;
-    width: 50%;
+    width: 100%;
     overflow: auto;
 }
 
 pre, code {
-    white-space: pre-wrap;
     font-size: .875rem;
 }
 
 
 
 @media screen and (max-width: 1000px) {
-    .code-container {
-        flex-direction: column;
-    }
-    .code-snippet {
-        width: 100%;
-    }
     pre, code {
         font-size: 13px;
     }
