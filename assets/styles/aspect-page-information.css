@@ -35,19 +35,9 @@
 
 .info-image img {
     border-radius: 1rem;
-    width: 50%;
+    width: calc(50% - 5px);
 }
 
-.info-image-text {
-    width: 50%;
-    background-color: var(--secondary);
-    border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:flex-start;
-    gap: 20px;
-}
 
 
 @media screen and (max-width: 1000px) {

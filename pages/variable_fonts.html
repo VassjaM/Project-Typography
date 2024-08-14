@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typographie im Web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+    <link rel="stylesheet" href="../assets/styles/variables.css">
+    <link rel="stylesheet" href="../assets/styles/fonts.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-intro.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-information.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-best-practice.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-website-links.css">
+    <link rel="stylesheet" href="../assets/styles/code-snippet.css">
+</head>
+</head>
+
+<body>
+    <header class="primary-header">
+        <a class="logo" href="../index.html"><img src="../assets/img/typography-logo.png" alt="Typography Logo"></a>
+        <a class="nav-button" href="imprint.html">Impressum</a>
+    </header>
+
+    <div class="title-head">
+
+        <div class="title-info">
+            <div class="title-info-inner">
+                <h1>Variable Fonts</h1>
+                <p>Anpassbare Schriftarten für Flexibilität</p>
+            </div>
+        </div>
+        <div class="title-image">
+            <img src="../assets\img\brett-jordan-M9NVqELEtHU-unsplash.jpg" alt="Variable Fonts">
+        </div>
+
+    </div>
+
+    <div class="center-container">
+        <div class="evaluation-container">
+            <div class="evaluation-grid">
+                <div class="evaluation-title black-box evaluation-card">
+                    <h2>Bewertung</h2>
+                    <p>Hilfreiche Einschätzung der Schwierigkeit</p>
+                </div>
+                <div class="evaluation-first blue-box evaluation-card">
+                    <h3>Nutzen ★★★☆☆</h3>
+                    <p>Wie relevant und hilfreich ist es?</p>
+                </div>
+                <div class="evaluation-second red-box evaluation-card">
+                    <h3>Aufwand ★★☆☆☆</h3>
+                    <p>Wie schwer ist es anzuwenden?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-container">
+        <div class="information-text-container">
+
+            <div class="info-point">
+                <h4>Was sind Variable Fonts?</h4>
+                <p>
+                    Variable Fonts sind eine revolutionäre Weiterentwicklung der traditionellen Webfonts.
+                    Anstatt für jede Stilvariation einer Schriftart (z.b. normal, fett, kursiv, etc.) eine separate Datei zu verwenden,
+                    fasst ein einziger Variable Font alle Variationen zusammen. Durch die Zusammenführung mehrerer Schriftschnitte kann der Designer
+                    oder Entwickler alle möglichen Varianten einer Schriftart dynamisch anpassen.
+                </p>
+            </div>
+
+            <div class="info-point">
+                <h4>Wie funktionieren Variable Fonts?</h4>
+                <p>
+                    Die Funktion von Variable Fonts lässt sich mithilfe von Achsen erklären. Für die Schrift gibt es viele Achsen die man mit CSS-Attributen steuern kann.
+                    Dabei gibt es Achsen für Strichstärke (weight), Schriftbreite (width), Kursive Darstellung (italic), Neigung (slant) und noch weitere.<br>
+                    Auf der jeweiligen Achse kann nun ein nummerischer Wert festgelegt werden. Dadurch ist es möglich, einen beliebigen Punkt auf der Skala auszuwählen, anstatt sich zwischen festgelegten Werten wie eine Schriftstärke von 700 oder 800 entscheiden zu müssen. So kann beispielsweise ein Wert wie 742 gewählt werden.
+
+                </p>
+
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code>
+/* Ein Beispiel der Einbindung eines Variable Fonts */
+/* Hier mit definierten Bereichen für weight und stretch */
+@font-face {
+    font-family: 'MyVariableFont';
+    src: url('/fonts/MyVariableFont.woff2') format('woff2-variations');
+    font-weight: 300 900; 
+    font-stretch: 70% 125%; 
+    }                              
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>Variable Fonts auf dieser Webseite?</h4>
+                <p>
+                    Auf dieser Webseite kommt der Variable Font Inter von Google Fonts zum Einsatz, der mehrere Achsen bietet:
+                    Optical Size zur Anpassung der Schriftgröße, Weight zur Steuerung der Schriftstärke und Italic für die kursive Darstellung.
+                    Zur Reduzierung der Komplexität wurde ausschließlich die Weight-Achse an verschiedenen Stellen der Seite verwendet. Alle Anpassungen der
+                    Schriftstärke wurden mithilfe von CSS-Variablen oder direkt im Code umgesetzt. Weitere Informationen zur Nutzung von CSS-Variablen befinden sich
+                    im Abschnitt CSS.
+                </p>
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code>
+/* Verwendung des Variable Fonts */
+
+--font-family-primary: "Inter",  "Arial" , sans-serif;
+
+body {
+    font-family: var(--font-family-body);
+}
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code>
+/* Anpassung des Variable Fonts */
+
+--font-weight-regular: 400;
+
+.info-point p{
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-regular);
+    color: var(--text);
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-container">
+        <div class="best-practice-container">
+            <div class="best-practice">
+                <h4>Best Practices</h4>
+
+                <div class="best-practice-outer">
+                    <div class="best-practice-inner">
+                        <div class="best-practice-card">
+                            <div class="best-practice-card-top card-color-purple">
+                                <h5>Typografische Hierarchie</h5>
+                            </div>
+                            <div class="best-practice-card-bottom">
+                                <p> Nutze die unterschiedlichen Achsen von Variable Fonts, um eine klare typografische Hierarchie zu schaffen.
+                                    Beispielsweise können Überschriften kräftiger und breiter gestaltet werden, während Fließtext schmaler und leichter bleibt.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="best-practice-card">
+                            <div class="best-practice-card-top card-color-red">
+                                <h5>CSS Techniken</h5>
+                            </div>
+                            <div class="best-practice-card-bottom">
+                                <p> Verwende die CSS-Eigenschaft "font-variation-settings", um präzise Anpassungen der Achsen vorzunehmen.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="best-practice-inner">
+                        <div class="best-practice-card">
+                            <div class="best-practice-card-top card-color-blue">
+                                <h5>Typografische Konsistenz</h5>
+                            </div>
+                            <div class="best-practice-card-bottom">
+                                <p> Die Möglichkeit, Schriftstile dynamisch zu variieren, kann dazu verleiten, sehr unterschiedliche Stilrichtungen innerhalb einer
+                                    Schrift zu verwenden. Halte dich an konsistente Schriftstile, um ein harmonisches Erscheinungsbild zu bewahren.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="best-practice-card">
+                            <div class="best-practice-card-top card-color-green">
+                                <h5>Relevante Achsen</h5>
+                            </div>
+                            <div class="best-practice-card-bottom">
+                                <p> Variable Fonts bieten zahlreiche Achsen. Wähle nur die Achsen aus, die für dein Design tatsächlich relevant sind,
+                                    um Komplexität zu reduzieren. Zu viele Variationen können das Design überladen. Halte die Anzahl der genutzten Achsen überschaubar,
+                                    um ein sauberer und kohärentes Layout zu gewährleisten.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="website-links">
+        <h4>Nützliche Webseiten</h4>
+
+        <div class="links-container">
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-red">
+                        <h5>MDN Web Docs</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Dokumentation</h6>
+                        <p>Informationen zu Variable Fonts und CSS Attributen</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_fonts/Variable_fonts_guide" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-purple">
+                        <h5>Axis Praxis</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Test Tool</h6>
+                        <p>Interaktives experimentieren mit Variable Fonts</p>
+                        <a href="https://www.axis-praxis.org/specimens/__DEFAULT__" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+
+                <div class="link-card">
+                    <div class="link-card-top card-color-green">
+                        <h5>V Fonts</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Datenbank</h6>
+                        <p>Variable Fonts finden und ausprobieren</p>
+                        <a href="https://v-fonts.com/" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-blue">
+                        <h5>ETC Type</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Beispiele</h6>
+                        <p>Verschiedene CSS Attribute anwenden</p>
+                        <a href="https://etceteratype.co/" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Typographie im Web</p>
+                <p>Ein Projekt an der Technischen Hochschule Köln</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
