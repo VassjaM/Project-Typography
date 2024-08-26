@@ -1,7 +1,7 @@
 
 .code-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     gap: 10px;
     overflow: auto;
@@ -23,6 +23,13 @@ pre, code {
 
 
 @media screen and (max-width: 1000px) {
+    .code-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        overflow: auto;
+    }
     pre, code {
         font-size: 13px;
     }
