@@ -112,8 +112,10 @@
                 <div class="code-container">
                     <div class="code-snippet">
                         <pre><code>
-/* Verwendung des Variable Fonts */
+/* Einbindung des Variable Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+/* Verwendung des Variable Fonts */
 --font-family-primary: "Inter",  "Arial" , sans-serif;
 --font-family-body: var(--font-family-primary);
 
@@ -124,7 +126,7 @@ body {
                     </div>
                     <div class="code-snippet">
                         <pre><code>
-/* Anpassung des Variable Fonts */
+/* Anpassung des Variable Fonts in CSS */
 
 --font-size-text: 22px;
 --font-weight-regular: 400;
@@ -185,8 +187,9 @@ body {
                         <h5>Einbindung</h5>
                     </div>
                     <div class="best-practice-card-bottom">
-                        <p> Die Verwendung von @font-face ermöglicht es dir, Variable Fonts korrekt zu integrieren und mit verschiedene
-                            Einstellungen wie font-display zu optimieren.</p>
+                        <p> Die Verwendung von @font-face ermöglicht eine präzise Integration von Variable Fonts und bietet Optionen zur Optimierung, wie zum Beispiel
+                            durch das font-display-Attribut. Es gibt jedoch auch einfachere Alternativen über Webfont-Anbieter, bei denen lediglich ein Import erforderlich ist.
+                            Für eine detailliertere Kontrolle und Anpassung der Variable Fonts ist es jedoch empfehlenswert, @font-face zu verwenden.</p>
                     </div>
                 </div>
 
