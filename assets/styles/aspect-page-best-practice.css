@@ -6,32 +6,21 @@
     margin-bottom: 150px;
 }
 
- .best-practice {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
- }
-
- .best-practice h4 {
+.best-practice-container h4{
     text-align: center;
     font-size: var(--font-size-info-title);
     color: var(--color-catch-title);
     padding-bottom: 40px;
     line-height: var(--catch-title-line-height);
     letter-spacing: -2.1px;
- }
-.best-practice-outer {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
 }
 
-.best-practice-inner {
-    display: flex;
-    flex-direction: column;
+.best-practice-grid {
+    display: grid;
+    grid-template-areas: 
+    "first second"
+    "third fourth";
     gap: 20px;
-    width: 50%;
 }
 
 .best-practice-card {
@@ -53,7 +42,7 @@
     padding: 30px;
 }
 
-.best-practice-card-top h5 {
+.best-practice-card-top h5{
     font-size: var(--font-size-title);
     margin: 0;
     font-weight: var(--font-weight-bold);
@@ -68,13 +57,14 @@
     padding: 30px;
 }
 
-.best-practice-card-bottom p {
+.best-practice-card-bottom p{
     font-size: 16px;
     font-weight: var(--font-weight-medium);
     letter-spacing: -0.011em;
     color: var(--color-info-text);
     line-height: 1.5em;
 }
+
 
 @media screen and (max-width: 1000px) {
     .best-practice-container {
@@ -89,12 +79,11 @@
         margin-bottom: 80px;
     }
 
-    .best-practice-outer {
-        flex-direction: column;
-    }
-    .best-practice-inner {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    .best-practice-grid {
+        grid-template-areas: 
+        "first"
+        "second"
+        "third"
+        "fourth";
     }
 }
