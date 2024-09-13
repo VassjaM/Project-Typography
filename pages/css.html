@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typographie im Web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+    <link rel="stylesheet" href="../assets/styles/variables.css">
+    <link rel="stylesheet" href="../assets/styles/fonts.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-intro.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-information.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-best-practice.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-website-links.css">
+    <link rel="stylesheet" href="../assets/styles/code-snippet.css">
+</head>
+
+<body>
+    <header class="primary-header">
+        <a class="logo" href="../index.html"><img src="../assets/img/typography-logo.png" alt="Typography Logo"></a>
+        <a class="nav-button" href="imprint.html">Impressum</a>
+    </header>
+
+    <div class="title-head">
+
+        <div class="title-info">
+            <div class="title-info-inner">
+                <h1>CSS</h1>
+                <p>Typographie stilisieren und anpassen</p>
+            </div>
+        </div>
+        <div class="title-image">
+            <img src="../assets\img\ferenc-almasi-NzERTNpnaDw-unsplash.jpg" alt="CSS">
+        </div>
+
+    </div>
+
+    <div class="center-container">
+        <div class="evaluation-container">
+            <div class="evaluation-grid">
+                <div class="evaluation-title black-box evaluation-card">
+                    <h2>Bewertung</h2>
+                    <p>Hilfreiche Einschätzung der Schwierigkeit</p>
+                </div>
+                <div class="evaluation-first blue-box evaluation-card">
+                    <h3>Nutzen ★★★☆☆</h3>
+                    <p>Wie relevant und hilfreich ist es?</p>
+                </div>
+                <div class="evaluation-second red-box evaluation-card">
+                    <h3>Aufwand ★★★★☆</h3>
+                    <p>Wie schwer ist es anzuwenden?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-container">
+        <div class="information-text-container">
+
+            <div class="info-point">
+                <h4>Was ist HTML?</h4>
+                <p>
+                    HTML bildet die Grundlage einer Webseite und definiert die Struktur und den Inhalt. Mit CSS (Cascading Style Sheets) kann
+                    dieses Gerüst dann visuell gestaltet werden. Da die Gestaltung von der Struktur getrennt ist, lässt sich dieselbe HTML-Basis nutzen,
+                    um unterschiedliche visuelle Designs zu erstellen.
+                </p>
+                <p>
+                    CSS spielt eine entscheidende Rolle bei der Ästhetik und Typografie einer Webseite. Es ermöglicht, Schriftarten,
+                    Textgrößen und Zeilenabstände so anzupassen, dass die Lesbarkeit und das Benutzererlebnis verbessert werden. 
+                    Für die Gestaltung von Typografie im Web ist CSS daher unverzichtbar, da es die Kontrolle über das gesamte Erscheinungsbild
+                    und die Wirkung des Textes bietet.
+                </p>
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code>
+/* Ein Beispiel eines CSS Codes */        
+
+                        </code></pre>
+                    </div>
+                </div>
+            
+
+            </div>
+
+            <div class="info-point">
+                <h4>Anwendung von CSS</h4>
+                <p>
+                    CSS kann auf drei verschiedene Arten in eine HTML-Seite eingebunden werden:<br>
+                    Inline-CSS: Der CSS-Code wird direkt in ein HTML-Element eingefügt. Dabei wird das Design jedoch nicht vom Inhalt getrennt,
+                    was die Wartung erschwert. Eine konsistente Gestaltung über mehrere HTML-Seiten hinweg wird problematisch, da das Styling in
+                    jedem Element separat eingefügt werden muss.<br>
+                    Internes Stylesheet: CSS kann im head-Bereich eines HTML-Dokuments hinzugefügt werden. Obwohl das Styling zentraler organisiert
+                    ist als bei Inline-CSS, bleibt das Problem bestehen, dass das Design nur für die jeweilige Seite gilt.<br>
+                    Externes Stylesheet: Die effektivste Methode ist das Einbinden einer separaten CSS-Datei. Dadurch kann ein einziges Stylesheet
+                    auf mehreren HTML-Seiten angewendet werden, was die Wartung erheblich vereinfacht und eine konsistente Gestaltung über die gesamte
+                    Webseite ermöglicht.
+                </p>
+
+
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel der CSS Selektoren in html */
+
+
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel von CSS Selektoren in HTML */
+
+&lt;p&gt;I am normal&lt;/p&gt;
+&lt;p style="color:red;"&gt;I am red&lt;/p&gt;
+&lt;p style="color:blue;"&gt;I am blue&lt;/p&gt;
+&lt;p style="font-size:50px;"&gt;I am big&lt;/p&gt;
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>Selektoren</h4>
+                <p>
+                    Damit das Stylesheet angewendet wird, müssen sogenannte Selektoren verwendet werden,
+                    um festzulegen, welche HTML-Elemente von bestimmten CSS-Regeln betroffen sein sollen.
+                    Es gibt dabei drei Haupttypen von Selektoren:
+                </p>
+                <p>
+                    Der Element-Selektor bezieht sich auf ein spezifisches HTML-Tag, wie z.B. einen Paragraphen
+                    (p) oder eine Überschrift (h1 bis h6). Alle HTML-Elemente dieses Typs, die im Dokument vorhanden sind,
+                    werden von den zugehörigen CSS-Regeln beeinflusst.
+                </p>
+                <p>
+                    Um mehrere verschiedene Elemente zu stylen, verwendet man den Klassen-Selektor. Dieser erhält einen
+                    benutzerdefinierten Namen und wird sowohl in der HTML-Datei als auch im Stylesheet verwendet. Klassen
+                    können in einem HTML-Dokument mehrfach vorkommen, was es ermöglicht, ähnliche Elemente auf einheitliche
+                    Weise zu gestalten.
+                </p>
+                <p>
+                    Der ID-Selektor wird verwendet, um ein einzelnes Element, das durch eine eindeutige ID identifiziert wird,
+                    zu stylen. Eine ID darf nur einmal in einem HTML-Dokument verwendet werden, sodass sie spezifisch ein einzelnes
+                    Element beeinflusst.
+                </p>
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel der CSS Selektoren in CSS*/
+
+
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel der CSS Selektoren in CSS*/
+
+
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>CSS Eigenschaften für Schrift</h4>
+                <p>
+                    Es gibt eine große Anzahl an CSS-Eigenschaften, welche für Typografie enorm wichtig sein können.
+                    Hier sind ein paar Beispiele :
+                </p>
+                <p>
+                    Font-Family legt fest, welche Schriftart für einen Text verwendet werden soll. Dabei
+                    kann auch eingestellt werden, ob die Schrift mit Serifen oder ohne Serife dargestellt wird.
+                </p>
+                <p>
+                    Font-Size bestimmt die Schriftgröße, welche in verschiedenen Einheiten wie Pixel, em oder
+                    rem angegeben werden kann. Mehr zu Schriftgrößen und den Einheiten finden sich im Abschnitt Font-Sizing.
+                </p>
+                <p>
+                    Font-Weight steuert die Dicke der Schrift. Hierbei werden anhand der gewählten Schrift übliche
+                    Werte wie normal, bold oder Zahlenwerte wie 400 und 700 verwendet.
+                </p>
+                <p>
+                    Line-Height bestimmt den Abstand zwischen Textzeilen. Diese kann in relativen Einheiten wie em
+                    oder absoluten Einheiten wie Pixeln angegeben werden.
+                </p>
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel der jewiligen Eigenschaften in CSS*/
+
+
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel der jewiligen Eigenschaften in CSS*/
+
+
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>Schriftsysteme</h4>
+                <p>
+                    Nicht alle Schriftsysteme verwenden ein ähnliches Alphabet. Viele Schriften sind speziell für bestimmte
+                    Schriftsysteme (z.B. kyrillisch, arabisch, griechisch) optimiert. Hier ist es wichtig, Schriftarten zu wählen,
+                    die diese Schriftsysteme korrekt und leserlich darstellen. CSS ermöglicht es, spezifische Schriftarten für
+                    verschiedene Schriftsysteme zu definieren. Dabei spielt das lang-Attribut im HTML eine Rolle, um die passende
+                    Schriftart in der CSS-Datei auszuwählen.<br>
+                    Für Sprachen mit unterschiedlichen Schreibrichtungen kann der Textfluss über die CSS-Eigenschaft direction angepasst werden.
+                </p>
+                
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel der jewiligen Eigenschaften in CSS*/
+
+
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel der jewiligen Eigenschaften in CSS*/
+
+
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>CSS auf dieser Webseite ?</h4>
+                <p>
+                    TODO
+                </p>
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel des eigenen Codes mit css und HTML*/
+
+
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Ein Beispiel des Color Gradient designs*/
+
+
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+    <div class="center-container">
+        <div class="best-practice-container">
+            <h4>Best Practices</h4>
+
+            <div class="best-practice-grid">
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-purple">
+                        <h5>Semantik</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Verwende die passenden Tags für unterschiedliche Textarten, um die Textgestaltung zu erleichtern und die
+                            Zugänglichkeit zu verbessern. Dadurch können Screenreader den Inhalt korrekt interpretieren und verstehen.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-blue">
+                        <h5>Sprache</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Achte auf die Sprache deiner Webseite, indem du das lang-Attribut im HTML entsprechend anpasst.
+                            Dadurch können Screenreader die richtige Sprache des Inhalts erkennen und korrekt wiedergeben.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-red">
+                        <h5>Gestaltung</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Auch wenn HTML die Möglichkeit bietet, Texte zu gestalten, solltest du dennoch
+                            CSS in separaten Dateien verwenden. Dies sorgt für eine bessere Übersichtlichkeit und erleichtert die Wartung deines Codes.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-green">
+                        <h5>Validierung</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Nutze einen HTML-Validator wie den W3C Markup Validation Service, um sicherzustellen,
+                            dass dein HTML-Code den Standards entspricht. Dies hilft, Syntaxfehler zu vermeiden und stellt sicher, dass deine Seite korrekt gerendert wird.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="website-links">
+        <h4>Nützliche Webseiten</h4>
+
+        <div class="links-container">
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-red">
+                        <h5>Interneting</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Information</h6>
+                        <p> Lehrreiche Ressource für HTML und CSS</p>
+                        <a href="https://internetingishard.netlify.app/" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-purple">
+                        <h5>MDN Web Docs</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Dokumentation</h6>
+                        <p>Information zu HTML-Tags und Anwendung</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+
+                <div class="link-card">
+                    <div class="link-card-top card-color-green">
+                        <h5>W3C</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Validierung</h6>
+                        <p>Validiere und prüfe HTML Code und Dateien</p>
+                        <a href="https://validator.w3.org/#validate_by_input" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-blue">
+                        <h5>W3C</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Information</h6>
+                        <p>Beispiele zu HTML-Tags und Anwendung</p>
+                        <a href="https://www.w3schools.com/html/default.asp" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Typographie im Web</p>
+                <p>Ein Projekt an der Technischen Hochschule Köln</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
