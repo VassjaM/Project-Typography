@@ -64,7 +64,7 @@
         <div class="information-text-container">
 
             <div class="info-point">
-                <h4>Was ist HTML?</h4>
+                <h4>Was ist CSS?</h4>
                 <p>
                     HTML bildet die Grundlage einer Webseite und definiert die Struktur und den Inhalt. Mit CSS (Cascading Style Sheets) kann
                     dieses Gerüst dann visuell gestaltet werden. Da die Gestaltung von der Struktur getrennt ist, lässt sich dieselbe HTML-Basis nutzen,
@@ -79,7 +79,16 @@
                 <div class="code-container">
                     <div class="code-snippet">
                         <pre><code>
-/* Ein Beispiel eines CSS Codes */        
+/* Ein Beispiel eines CSS-Codes */     
+/* Alle h1 Überschriften erhalten die Farbe Weiß */  
+h1 {
+    color: white;
+}
+
+/* Alle p Paragraphen sind nun zentriert */  
+p {
+    text-align: center;
+}
 
                         </code></pre>
                     </div>
@@ -106,19 +115,28 @@
                 <div class="code-container">
                     <div class="code-snippet">
                         <pre><code class="language-html">
-/* Ein Beispiel der CSS Selektoren in html */
+/* Inline CSS-Code */
+&lt;h1 style="color:red;"&gt;This text is red&lt;/h1&gt;
+&lt;p style="font-size:15px;"&gt;This text is small&lt;/p&gt;
 
-
+/* Internes Stylesheet */
+&lt;head&gt;
+    &lt;style&gt;
+        p {
+            color: blue;
+            font-size: 30px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
                         </code></pre>
                     </div>
                     <div class="code-snippet">
                         <pre><code class="language-html">
-/* Ein Beispiel von CSS Selektoren in HTML */
-
-&lt;p&gt;I am normal&lt;/p&gt;
-&lt;p style="color:red;"&gt;I am red&lt;/p&gt;
-&lt;p style="color:blue;"&gt;I am blue&lt;/p&gt;
-&lt;p style="font-size:50px;"&gt;I am big&lt;/p&gt;
+/* Externes Stylesheet */
+/* Hier als ein Link zu der Datei mystyle.css */
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="mystyle.css"&gt;
+&lt;/head&gt;
                         </code></pre>
                     </div>
                 </div>
@@ -151,15 +169,52 @@
                 <div class="code-container">
                     <div class="code-snippet">
                         <pre><code class="language-html">
-/* Ein Beispiel der CSS Selektoren in CSS*/
+/* Ein Beispiel der HTMl Datei: index.html*/
 
+&lt;!DOCTYPE html&gt;
+&lt;html lang="de"&gt;
+
+&lt;head&gt;
+    &lt;link rel="stylesheet" href="mystyle.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;This is a heading&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph.&lt;/p&gt;
+    &lt;div class="important-text"&gt;
+        &lt;p&gt;This an important paragraph.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;p id="extra"&gt;This is a paragraph.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
 
                         </code></pre>
                     </div>
                     <div class="code-snippet">
-                        <pre><code class="language-html">
-/* Ein Beispiel der CSS Selektoren in CSS*/
+                        <pre><code class="language-css">
+/* Ein Beispiel der CSS Datei: mystyle.css*/
 
+/* Element Selektor */
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 50px;
+}
+
+p {
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+}
+
+/* Klassen Selektor */
+.important-text  {
+    color: red;
+}
+
+/* ID Selektor*/
+#extra {
+    font-weight: 600;
+}
 
                         </code></pre>
                     </div>
@@ -170,6 +225,7 @@
                 <h4>CSS Eigenschaften für Schrift</h4>
                 <p>
                     Es gibt eine große Anzahl an CSS-Eigenschaften, welche für Typografie enorm wichtig sein können.
+                    Weitere Sammlungen von CSS-Eigenschaften sind online verfügbar und auf den empfohlenen Webseiten unten auf dieser Seite zu finden.
                     Hier sind ein paar Beispiele :
                 </p>
                 <p>
@@ -188,20 +244,44 @@
                     Line-Height bestimmt den Abstand zwischen Textzeilen. Diese kann in relativen Einheiten wie em
                     oder absoluten Einheiten wie Pixeln angegeben werden.
                 </p>
+                <p>
+                    Letter-Spacing verändert den Abstand zwischen den einzelnen Buchstaben.
+                </p>
+                <p>
+                    Color ermöglicht es, die Farbe der Schrift zu verändern. Hier ist es möglich Farbennamen, RGB-, HEX- oder HSL-Werte zu verwenden. 
+                </p>
                 
                 <div class="code-container">
                     <div class="code-snippet">
-                        <pre><code class="language-html">
-/* Ein Beispiel der jewiligen Eigenschaften in CSS*/
+                        <pre><code class="language-css">
+/* Ein Beispiel zu Font-Family, Font-Size, Font-Weight */
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    font-weight: 700;
+}
 
-
+p {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
                         </code></pre>
                     </div>
                     <div class="code-snippet">
-                        <pre><code class="language-html">
-/* Ein Beispiel der jewiligen Eigenschaften in CSS*/
+                        <pre><code class="language-css">
+/* Ein Beispiel zu Line-Height, Letter-Spacing, Color */
+h5 {
+    line-height: 1.5;
+    letter-spacing: 2px;
+    color: #ff6347;
+}
 
-
+p {
+    line-height: 50%;
+    letter-spacing: -1px;
+    color: rgb(255, 99, 71);
+}
                         </code></pre>
                     </div>
                 </div>
@@ -221,17 +301,33 @@
                 
                 <div class="code-container">
                     <div class="code-snippet">
-                        <pre><code class="language-html">
-/* Ein Beispiel der jewiligen Eigenschaften in CSS*/
+                        <pre><code class="language-css">
+/* Ein Beispiel für mehrsprachige Optimierung in CSS */
+body {
+    font-family: "Arial", sans-serif;
+}
 
+/* Für kyrillisch */
+html[lang="ru"] body {
+    font-family: "Rubik", sans-serif; 
+}
+
+/* Für arabisch */
+html[lang="ar"] body {
+    font-family: "Amiri", serif; 
+}
 
                         </code></pre>
                     </div>
                     <div class="code-snippet">
-                        <pre><code class="language-html">
-/* Ein Beispiel der jewiligen Eigenschaften in CSS*/
+                        <pre><code class="language-css">
+/* Ein Beispiel für Arabisch */
+/* Arabisch wird von Rechts nach Links gelesen */
 
-
+html[lang="ar"] body {
+    direction: rtl;
+    text-align: right;
+  }
                         </code></pre>
                     </div>
                 </div>
@@ -240,22 +336,85 @@
             <div class="info-point">
                 <h4>CSS auf dieser Webseite ?</h4>
                 <p>
-                    TODO
+                    Alle CSS-Dateien wurden als externe Stylesheets eingebunden, wobei darauf geachtet wurde, dass nur die benötigten CSS-Dateien in
+                    die jeweiligen HTML-Dokumente integriert wurden.<br>
+                    Um die Verwaltung und Anpassung von CSS-Eigenschaften wie Farben, Schriftgrößen und anderen Gestaltungselementen zu vereinfachen,
+                    wurde eine zentrale CSS-Datei namens „variables.css“ erstellt, die alle wichtigen CSS-Variablen enthält. In dieser Datei wurden
+                    unter dem :root-Selektor die wichtigsten Variablen mit Namen und Werten definiert. Diese Variablen wurden dann in anderen CSS-Dateien
+                    verwendet, was die Wartung erleichtert und Anpassungen deutlich effizienter macht.<br>
+                    Auf dieser Webseite wurden ausschließlich Element- und Klassen-Selektoren verwendet, da ID-Selektoren nicht notwendig waren.
+                    Da die Webseite für deutschsprachige Nutzer gedacht ist, wurde im HTML-Dokument ausschließlich das lang-Attribut für die
+                    deutsche Sprache definiert.<br>
+                    Zu den am häufigsten genutzten Techniken gehören CSS-Eigenschaften wie font-size, font-weight, line-height, letter-spacing und color,
+                    um den Text der Webseite zu gestalten. Diese Eigenschaften wurden zunächst als Variablen festgelegt und dann in allen anderen 
+                    CSS-Dateien wiederverwendet. Es gibt auch Stellen, wo die Eigenschaften ohne Variable deklariert wurden. Besonders hervorzuheben ist der Text unter
+                    jeder Überschrift, der durch einen Farbverlauf hervorgehoben wird. Dieser Effekt wurde erzielt, indem ein Farbverlauf als Hintergrund festgelegt und
+                    dann nur auf den Textbereich angewendet wurde.
                 </p>
                 
                 <div class="code-container">
                     <div class="code-snippet">
-                        <pre><code class="language-html">
-/* Ein Beispiel des eigenen Codes mit css und HTML*/
+                        <pre><code class="language-css">
+/* Ein Ausschnitt aus der variables.css Datei */
+/* Hier sind nicht alle Variablen aufgelistet! */
+:root {
+
+    /* colors */
+    --color-catch-title: rgb(51, 51, 51);
+    --color-catch-text: rgb(117, 117, 117);
+    --accent: #f26172;
+    --primary: #4690f0;
+    --text: #020a15;
+
+    /* font weight */
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+
+    /* font size */
+    --font-size-xs: 15px;
+    --font-size-xl: 100px; 
+    --font-size-title-text: 35px;
+
+    /* letter spacing */
+    --catch-title-spacing: -2px;
+    --catch-text-spacing: -0,5px;
+
+    /* line height */
+    --catch-title-line-height: 1.2em;
+    --catch-text-line-height: 1.5em;
+}
 
 
                         </code></pre>
                     </div>
                     <div class="code-snippet">
-                        <pre><code class="language-html">
-/* Ein Beispiel des Color Gradient designs*/
+                        <pre><code class="language-css">
+/* Ein Ausschnitt aus der aspect-page-information.css */
+.info-point h4{
+    font-size: var(--font-size-info-title);
+    color: var(--color-catch-title);
+    padding-bottom: 40px;
+    line-height: var(--catch-title-line-height);
+    letter-spacing: -2.1px;
+}
 
+.info-point p{
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-regular);
+    color: var(--text);
+    padding-bottom: 30px;
+}
 
+/* Ausschnitt für den Farbverlauf aus der intro.css*/
+.title-card p {
+    font-size: var(--font-size-title-text);
+    font-weight: var(--font-weight-medium);
+    background: linear-gradient(120deg, var(--primary), var(--accent));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-self: center;
+}
                         </code></pre>
                     </div>
                 </div>
@@ -273,41 +432,48 @@
 
                 <div class="best-practice-card">
                     <div class="best-practice-card-top card-color-purple">
-                        <h5>Semantik</h5>
+                        <h5>Variablen</h5>
                     </div>
                     <div class="best-practice-card-bottom">
-                        <p> Verwende die passenden Tags für unterschiedliche Textarten, um die Textgestaltung zu erleichtern und die
-                            Zugänglichkeit zu verbessern. Dadurch können Screenreader den Inhalt korrekt interpretieren und verstehen.</p>
+                        <p> Verwende CSS Custom Properties für wiederverwendbare Werte wie Schriftgrößen, Abstände und Farben.
+                            Dies sorgt für ein konsistentes Design und erleichtert die Gestaltung der Schrift.
+                        </p>
                     </div>
                 </div>
 
                 <div class="best-practice-card">
                     <div class="best-practice-card-top card-color-blue">
-                        <h5>Sprache</h5>
+                        <h5>Komplexität</h5>
                     </div>
                     <div class="best-practice-card-bottom">
-                        <p> Achte auf die Sprache deiner Webseite, indem du das lang-Attribut im HTML entsprechend anpasst.
-                            Dadurch können Screenreader die richtige Sprache des Inhalts erkennen und korrekt wiedergeben.</p>
+                        <p> CSS bietet zahlreiche Möglichkeiten, Schriften zu gestalten und anzupassen. Experimentiere mit verschiedenen
+                            Kombinationen, um herauszufinden, welche Designs am besten funktionieren. Oft kann jedoch eine schlichte und
+                            reduzierte Gestaltung effektiver sein als ein komplexes Design.
+                        </p>
                     </div>
                 </div>
 
                 <div class="best-practice-card">
                     <div class="best-practice-card-top card-color-red">
-                        <h5>Gestaltung</h5>
+                        <h5>Zeilenhöhe</h5>
                     </div>
                     <div class="best-practice-card-bottom">
-                        <p> Auch wenn HTML die Möglichkeit bietet, Texte zu gestalten, solltest du dennoch
-                            CSS in separaten Dateien verwenden. Dies sorgt für eine bessere Übersichtlichkeit und erleichtert die Wartung deines Codes.</p>
+                        <p> Für längere Textblöcke oder Absätze ist ein etwas größerer Zeilenabstand empfehlenswert, um die Lesbarkeit zu verbessern.
+                            Bei Überschriften oder kürzeren Texten kann der Zeilenabstand hingegen reduziert werden, um eine kompakte Darstellung zu
+                            erzielen. Teste verschiedene Kombinationen, um den optimalen Zeilenabstand für das jeweilige Design zu finden.
+                        </p>
                     </div>
                 </div>
 
                 <div class="best-practice-card">
                     <div class="best-practice-card-top card-color-green">
-                        <h5>Validierung</h5>
+                        <h5>Silbentrennung</h5>
                     </div>
                     <div class="best-practice-card-bottom">
-                        <p> Nutze einen HTML-Validator wie den W3C Markup Validation Service, um sicherzustellen,
-                            dass dein HTML-Code den Standards entspricht. Dies hilft, Syntaxfehler zu vermeiden und stellt sicher, dass deine Seite korrekt gerendert wird.</p>
+                        <p> Aktiviere die automatische Silbentrennung, um lange Wörter in kleineren Textblöcken oder Spalten korrekt zu umbrechen.
+                            Besonders in der Deutschen Sprache, wo lange Wörter häufig vorkommen, verbessert die Silbentrennung die Lesbarkeit und
+                            verhindert unschöne Textüberläufe.
+                        </p>
                     </div>
                 </div>
 
@@ -324,11 +490,11 @@
             <div class="container-links">
                 <div class="link-card">
                     <div class="link-card-top card-color-red">
-                        <h5>Interneting</h5>
+                        <h5>Syncope</h5>
                     </div>
                     <div class="link-card-bottom">
-                        <h6>Information</h6>
-                        <p> Lehrreiche Ressource für HTML und CSS</p>
+                        <h6>Tool</h6>
+                        <p>Interaktives experimentieren mit Line-Height</p>
                         <a href="https://internetingishard.netlify.app/" class="button">Ausprobieren</a>
                     </div>
                 </div>
@@ -341,18 +507,18 @@
                     </div>
                     <div class="link-card-bottom">
                         <h6>Dokumentation</h6>
-                        <p>Information zu HTML-Tags und Anwendung</p>
-                        <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" class="button">Ausprobieren</a>
+                        <p>Information zu Variablen und Anwendung</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/--*" class="button">Ausprobieren</a>
                     </div>
                 </div>
 
                 <div class="link-card">
                     <div class="link-card-top card-color-green">
-                        <h5>W3C</h5>
+                        <h5>MDN Web Docs</h5>
                     </div>
                     <div class="link-card-bottom">
-                        <h6>Validierung</h6>
-                        <p>Validiere und prüfe HTML Code und Dateien</p>
+                        <h6>Dokumentation</h6>
+                        <p>Information zu Silbentrennung und Anwendung</p>
                         <a href="https://validator.w3.org/#validate_by_input" class="button">Ausprobieren</a>
                     </div>
                 </div>
@@ -361,11 +527,11 @@
             <div class="container-links">
                 <div class="link-card">
                     <div class="link-card-top card-color-blue">
-                        <h5>W3C</h5>
+                        <h5>Design Awards</h5>
                     </div>
                     <div class="link-card-bottom">
-                        <h6>Information</h6>
-                        <p>Beispiele zu HTML-Tags und Anwendung</p>
+                        <h6>Kollektion</h6>
+                        <p>Plattform für interessante CSS-Designs</p>
                         <a href="https://www.w3schools.com/html/default.asp" class="button">Ausprobieren</a>
                     </div>
                 </div>
