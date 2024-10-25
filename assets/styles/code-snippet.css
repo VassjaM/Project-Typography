@@ -17,7 +17,7 @@
 }
 
 pre, code {
-    font-size: .875rem;
+    font-size: var(--font-size-code-snippet);
 }
 
 
@@ -29,9 +29,6 @@ pre, code {
         width: 100%;
         gap: 10px;
         overflow: auto;
-    }
-    pre, code {
-        font-size: 13px;
     }
 }
 

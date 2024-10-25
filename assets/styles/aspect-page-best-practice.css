@@ -58,11 +58,11 @@
 }
 
 .best-practice-card-bottom p{
-    font-size: 16px;
+    font-size: var(--font-size-base);
     font-weight: var(--font-weight-medium);
     letter-spacing: -0.011em;
     color: var(--color-info-text);
-    line-height: 1.5em;
+    line-height: var(--catch-text-line-height);
 }
 
 

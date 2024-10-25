@@ -40,7 +40,7 @@
 }
 
 .aspect-information h3 {
-    letter-spacing: -2.1px;
+    letter-spacing: var(--h4-header-spacing);
     line-height: 50px;
 }
 

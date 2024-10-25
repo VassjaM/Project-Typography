@@ -56,30 +56,38 @@
 
 
     /* font size */
-    --font-size-xs: 15px;  /*  maybe das in rem umrechnen später*/  
-    --font-size-s: 24px;  
-    --font-size-m: 50px;  
-    --font-size-l: 56px;  
-    --font-size-xl: 100px; 
-    --font-size-title-text: 35px;
-    --font-size-aspect-title: 80px;
-    --font-size-info-title: 50px;
+    --font-size-base: 1rem;
+    --font-size-xs: 0.938rem;
+    --font-size-s: 1.5rem;  
+    --font-size-m: 3.125rem;  
+    --font-size-l: 3.5rem;  
+    --font-size-xl: 6.25rem; 
 
-    --font-size-title: 32px;
-    --font-size-text: 22px;
+    --font-size-title-text: 2.188rem;
+    --font-size-aspect-title: 5rem;
+    --font-size-info-title: 3.125rem;
+
+    --font-size-title: 2rem;
+    --font-size-text: 1.375rem;
+
+    --font-size-link-card-top: 2.063rem;
+    --font-size-link-card-bottom: 1.25rem;
+
+    --font-size-code-snippet: .875rem;
 
 
 
     /* font sizes for the examples in intro card */
-    --font-size-example-1: 40px;
-    --font-size-example-2: 52px;
-    --font-size-example-3: 35px;
-    --font-size-example-4: 40px;
+    --font-size-example-1: 2.5rem;
+    --font-size-example-2: 3.25rem;
+    --font-size-example-3: 2.188rem;
+    --font-size-example-4: 2.5rem;
    
 
     /* letter spacing */
     --catch-title-spacing: -2px;
     --catch-text-spacing: -0,5px;
+    --h4-header-spacing: -2.1px;
 
     /* line height */
     --catch-title-line-height: 1.2em;
@@ -93,15 +101,16 @@
 /* font sizes for smaller screens*/
 @media (max-width: 1000px) {
     :root {
-        --font-size-xs: 15px; 
-        --font-size-s: 24px;  
-        --font-size-m: 50px;  
-        --font-size-l: 50px;  
-        --font-size-xl: 60px;
-        --font-size-title-text: 25px;
-        --font-size-aspect-title: 60px;
-        --font-size-text: 20px;
-        --font-size-info-title: 40px;
+        --font-size-xs: 0.938rem; 
+        --font-size-s: 1.5rem;  
+        --font-size-m: 3.125rem;  
+        --font-size-l: 3.125rem;  
+        --font-size-xl: 3.75rem;
+        --font-size-title-text: 1.563rem;
+        --font-size-aspect-title: 3.75rem;
+        --font-size-text: 1.25rem;
+        --font-size-info-title: 2.5rem;
+        --font-size-code-snippet: 0.813rem;
     }
 }
 

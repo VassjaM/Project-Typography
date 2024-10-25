@@ -32,16 +32,16 @@
 }
 
 .question-title {
-    font-size: 20px;
+    font-size: var(--font-size-link-card-bottom);
     font-weight: var(--font-weight-bold);
     letter-spacing: -0.8px;
-    line-height: 1.2em;
+    line-height: var(--catch-title-line-height);
     text-align: left;
     color: rgb(51, 51, 51);
 }
 
 .answer-text {
-    font-size: 16px;
+    font-size: var(--font-size-base);
     font-weight: var(--font-weight-medium);
     line-height: 1.6em;
     text-align: left;

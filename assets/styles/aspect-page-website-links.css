@@ -13,7 +13,7 @@
     font-size: var(--font-size-info-title);
     color: var(--color-catch-title);
     line-height: var(--catch-title-line-height);
-    letter-spacing: -2.1px;
+    letter-spacing: var(--h4-header-spacing);
     padding: 0 20px 40px 20px;
  }
 
@@ -53,9 +53,9 @@
 }
 
 .link-card-top h5 {
-    font-size: 33px;
+    font-size: var(--font-size-link-card-top);
     margin: 30px 0;
-    line-height: 1.2em;
+    line-height: var(--catch-title-line-height);
 }
 
 .link-card-bottom {
@@ -66,7 +66,7 @@
 }
 
 .link-card-bottom h6 {
-    font-size: 20px;
+    font-size: var(--font-size-link-card-bottom);
     font-weight: var(--font-weight-semi-bold);
     line-height: 1.4em;
     letter-spacing: -0.5px;
@@ -74,7 +74,7 @@
 }
 
 .link-card-bottom p {
-    font-size: 16px;
+    font-size: var(--font-size-base);
     font-weight: var(--font-weight-medium);
     line-height: 1.6em;
     color: var(--color-info-text);

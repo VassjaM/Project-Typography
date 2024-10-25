@@ -15,7 +15,7 @@
     color: var(--color-catch-title);
     padding-bottom: 40px;
     line-height: var(--catch-title-line-height);
-    letter-spacing: -2.1px;
+    letter-spacing: var(--h4-header-spacing);
 }
 
 .info-point p{
