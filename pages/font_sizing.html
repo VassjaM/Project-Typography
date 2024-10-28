@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typographie im Web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+    <link rel="stylesheet" href="../assets/styles/variables.css">
+    <link rel="stylesheet" href="../assets/styles/fonts.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-intro.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-information.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-best-practice.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-website-links.css">
+    <link rel="stylesheet" href="../assets/styles/code-snippet.css">
+</head>
+
+<body>
+    <header class="primary-header">
+        <a class="logo" href="../index.html"><img src="../assets/img/typography-logo.png" alt="Typography Logo"></a>
+        <a class="nav-button" href="imprint.html">Impressum</a>
+    </header>
+
+    <div class="title-head">
+
+        <div class="title-info">
+            <div class="title-info-inner">
+                <h1>Font Sizing</h1>
+                <p>Effektive Strategien für Schriftgrößen</p>
+            </div>
+        </div>
+        <div class="title-image">
+            <img src="../assets/img/alexander-andrews-zw07kVDaHPw-unsplash.jpg" alt="Font Sizing">
+        </div>
+
+    </div>
+
+    <div class="center-container">
+        <div class="evaluation-container">
+            <div class="evaluation-grid">
+                <div class="evaluation-title black-box evaluation-card">
+                    <h2>Bewertung</h2>
+                    <p>Hilfreiche Einschätzung der Schwierigkeit</p>
+                </div>
+                <div class="evaluation-first blue-box evaluation-card">
+                    <h3>Nutzen ★★★★☆</h3>
+                    <p>Wie relevant und hilfreich ist es?</p>
+                </div>
+                <div class="evaluation-second red-box evaluation-card">
+                    <h3>Aufwand ★★★☆☆</h3>
+                    <p>Wie schwer ist es anzuwenden?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-container">
+        <div class="information-text-container">
+
+            <div class="info-point">
+                <h4>Was ist Font Sizing?</h4>
+                <p>
+                    Font Sizing ist ein zentraler Aspekt im Webdesign für Typographie. Es bezieht sich auf die Anpassung der Schriftgröße,
+                    um die Lesbarkeit, die visuelle Hierarchie, das responsive Design und die Barrierefreiheit zu optimieren. Eine gut gewählte Schriftgröße sorgt dafür,
+                    dass Texte auf verschiedenen Bildschirmgrößen ein angenehmes Leseerlebnis bieten. Dabei spielt die Skalierung eine wichtige Rolle, da sie präzise Vorgaben
+                    für Schriftgrößen und Abstände festlegt, was zu einer konsistenten und benutzerfreundlichen Darstellung führt.
+                </p>
+            </div>
+
+            <div class="info-point">
+                <h4>Einheiten</h4>
+                <p>
+                    Um präzise Größen für Schrift zu erstellen werden verschiedene Einheiten verwendet. Hier ist ein kleiner Einblick in relevante Einheiten für Typographie:
+                </p>
+                <p>
+                    Absolute Größen sind feste, unveränderbare Größen, welche sich nicht von einem Kontext oder der Bildschirmgröße verändern lassen.
+                    Diese werden einmal deklariert und bleiben so unverändert. Die häufigste absolute Einheit wird in Pixel (px) deklariert. Bei einem
+                    spezifischen starrem Design eignen sich Pixel hervorragend, da es absolute Kontrolle über die genauen Größen bietet.
+                </p>
+                <p>
+                    Relative Größen orientieren sich an der Schriftgröße des jeweiligen Elternelements und sind flexibel, da sie sich dynamisch an ihre Umgebung anpassen.
+                    Zu den häufigsten relativen Einheiten gehört em. Ein Wert von 1em entspricht der Schriftgröße des Elternelements. Wenn also ein Elternelement eine Schriftgröße von 20px hat,
+                    wird ein Kindelement mit der Einstellung 2em auf eine Schriftgröße von 40px skaliert. em-Einheiten eignen sich besonders gut für modulare und wiederverwendbare Komponenten,
+                    da sie sich immer proportional zum Elternelement skalieren.<br>
+                    Eine weitere häufig genutzte relative Einheit ist rem, die sich auf die Schriftgröße des Root-Elements (meistens das html-Tag) bezieht. Diese Einheit ist damit unabhängiger
+                    von Verschachtelungen und bietet eine konsistente Basis. Wenn beispielsweise ein Element in einem Elternelement mit 20px Schriftgröße auf 1.5rem gesetzt wird, beträgt
+                    die Schriftgröße 24px, basierend auf der standardmäßigen Root-Größe von 16px. rem-Einheiten eignen sich daher ideal für konsistente Skalierungen im gesamten Layout,
+                    da sie unabhängig von der Hierarchie der Elemente sind und somit eine verlässliche Einheit für eine stabile und einheitliche Gestaltung bieten.
+                </p>
+                <p>
+                    Viewport-Einheiten passen sich an die Größe des sichtbaren Bereichs des Bildschirms an. 1vw entspricht dabei 1 % der Breite des Viewports, und 1vh entspricht 1 % der Höhe.
+                    Zusätzlich gibt es die Einheiten vmin und vmax, die sich nach der kleineren oder größeren Seite des Viewports richten. Bei einer Bildschirmhöhe von 800px würde 1vmin zum Beispiel
+                    8px entsprechen. Viewport-Einheiten eignen sich besonders gut für fluides Design, bei dem die Schrift dynamisch mit der Breite oder Höhe des Bildschirms wächst oder schrumpft
+                    und so für eine optimale Anpassung auf 
+                </p>
+
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Absoulute Größen px und pt*/
+/* 1pt entspricht 1/72 Zoll */
+
+h1 {
+    font-size: 50pt;
+}
+
+p {
+    font-size: 16px;
+}
+
+/* Viewport Größen */
+
+h1 {
+    font-size: 5vw; /* Die Schriftgröße passt sich der Breite des Viewports an */
+  }
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Relative Größe EM */
+.subtitel {
+    font-size: 16px;
+}
+  
+.subtitel p {
+    font-size: 2em; /* 2em ist 32px, weil 16px * 2 = 32px */
+}
+
+/* Relative Größe REM */
+html {
+    font-size: 16px;
+}
+  
+p {
+    font-size: 1.5rem; /* 1.5rem ist immer 24px, da sie auf die Root-Größe verweist */
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>Skalierung</h4>
+                <p>
+                    Mithilfe von Skalierungsmethoden können die Einheiten jetzt klar angepasst werden. Hier sind ein paar Beispiele:<br>
+                    Root-based Scaling bezieht sich auf die Verwendung der relativen rem Einheiten, welche es möglich machen konsistente
+                    und flexible Schriftgrößen über die gesamte Webseite festzulegen. Dabei passen sich alle Schriftgrößen global an die Root-Schriftgröße an.<br>
+                    Clamp-based Scaling ist eine CSS Funktion, welche es ermöglicht eine dynamische Schriftgrößenskala zu erstellen. Diese basiert auf minimalen,
+                    maximalen und einem dynamischen Mittelwert.<br>
+                    Modular Scaling basiert auf dem Konzept, dass die Größen in einem Verhältnis zueinander stehen. Ähnlich wie Intervalle oder geometrische
+                    Proportionen werden Schriftgrößen basieren auf einem Skalierungsfaktor berechnet. Ein gängiger Ansatz ist die Verwendung von Skalen wie golden Ratio oder der Fibonacci-Folge.<br>
+                    Fluid Scaling bezieht sich auf die Verwendung der Viewport Einheiten um Schriftgrößen proportional zu dem Bildschirm zu skalieren.
+                </p>
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Root-based Scaling */
+html {
+    font-size: 16px; /* Definiert die Basis-Schriftgröße */
+}
+
+body {
+    font-size: 1rem; /* Entspricht 16px */
+}
+
+h1 {
+    font-size: 2rem; /* Entspricht 32px */
+}
+
+/* Clamp-based Scaling */
+body {
+    font-size: clamp(1rem, 2vw + 1rem, 2.5rem);
+}
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Modular Scaling */
+:root {
+    --font-size-base: 1rem; /* Grundlegende Textgröße ausgehend von 16px */
+    --font-size-titel: 3rem; /* Großer Sprung für Überschriften */
+    --font-size-middle: 2.25rem; /* Moderater Sprung */
+    --font-size-smaller: 1.5rem; /* Kleinere Abstufung */
+}
+
+/* Fluid Scaling */
+body {
+    font-size: 5vw; /* Schriftgröße ist 5% der Viewport-Breite */
+  }
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>Umsetzung</h4>
+                <p>
+                    Um Schriftgrößen semantisch zu skalieren, ist es hilfreich, sich auf die Rollen der Textelemente zu konzentrieren. Der Inhalt sollte strukturell
+                    und visuell so gestaltet werden, damit der Nutzer sofort erkennen kann, welche Informationen wichtig sind und wie er sich im Text orientieren kann.
+                    Hier ein paar Leitlinien für die Umsetzung von Schriftskalierung:
+                </p>
+
+                <p>
+                    Starte mit den zentralen Inhalten, wie dem Haupttitel oder einer Headline, und arbeite dich schrittweise zu den weniger wichtigen Texten vor.
+                    Alternativ kannst du auch bei den weniger wichtigen Inhalten beginnen und die Hierarchie nach oben aufbauen. Jede Ebene ( Titel, Untertitel, Absätze, kurze Hinweise und Zusatzinformationen )
+                    erhält eine eigene, sinnvolle Schriftgröße. Diese Größen können zunächst auf einer definierten Skala basieren, die anschließend bei Bedarf feinjustiert wird.
+                </p>
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Semantische Skalierung */
+/* Basis-Schriftgröße: 16px */
+/* Ratio: 1.2 */
+
+/* 
+1:  0.694rem      6:  1.728rem
+2:  0.833rem      7:  2.074rem
+3:  1rem          8:  2.488rem          
+4:  1.2rem        9:  2.986rem
+5:  1.44rem       10: 3.583rem
+*/
+
+/* 
+    Haupttitel = 3.583rem 
+    Sekundärer Titel = 2.074rem 
+    Absatz = 1.2rem 
+    Basis = 1rem 
+    Infoschnipsel = 0.833rem 
+*/
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Skalierung an einem Beispiel */
+
+html {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3.583rem;
+}
+
+h2 {
+    font-size: 2.074rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.small-text {
+    font-size: 0.833rem;
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>Font Sizing auf dieser Webseite?</h4>
+                <p>
+                    Die Schriftgrößen spielen auf dieser Webseite eine zentrale Rolle, da ein Großteil der Inhalte aus Text besteht.
+                    Die informationsorientierten Seiten im Blog-Stil enthalten lange Absätze, verschiedene Überschriften und kurze Textbausteine.
+                    Für jedes dieser Elemente ist eine passende Größe entscheidend, damit sie ihre jeweilige Funktion optimal erfüllen können.
+                </p>
+
+                <p>
+                    Zu Beginn wurden die Größen in Pixeln festgelegt, um eine klare Basis für das Design zu schaffen. Für das finale Layout wurden die Größen
+                    jedoch auf relative REM-Einheiten umgestellt, um die Lesbarkeit und Anpassungsfähigkeit der Webseite für verschiedene Nutzer zu verbessern.
+                    REM-Einheiten bieten eine klare Struktur, da sie sich ausschließlich auf die Schriftgröße des Root-Elements beziehen, was eine konsistente 
+                    Skalierung ermöglicht und die Pflege erleichtert.
+                </p>
+
+                <p>
+                    Die Skalierung orientiert sich an einer Basisgröße von 16px und folgt einer Proportion von 1.125, um eine harmonische Typografie-Hierarchie 
+                    zu schaffen. Diese Hierarchie reicht von Haupttiteln, sekundären Titeln, Bewertungsüberschriften und Informationstiteln bis hin zu Informationstexten,
+                    langen Absätzen, kurzen Absätzen und Button-Beschriftungen. Kleinere Elemente wie kurze Textbausteine und bestimmte Absätze nutzen die Basisgröße von 16px.
+                </p>
+
+                <p>
+                    In einigen Fällen teilen sich unterschiedliche Elemente die gleiche Größe, obwohl sie unterschiedliche Funktionen erfüllen. Ein Beispiel sind die kleinen Textbausteine
+                    in den informativen Website-Karten und die kurzen Absätze in der Frage-und-Antwort-Sektion auf der Landing-Page.
+                </p>
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Ausschnitt aus den Font Sizes in variables.css */
+:root {
+    /* font size */
+    --font-size-base: 1rem;
+    --font-size-xs: 0.938rem;
+    --font-size-s: 1.5rem;  
+    --font-size-m: 3.125rem;  
+    --font-size-l: 3.5rem;  
+    --font-size-xl: 6.25rem; 
+
+    --font-size-title-text: 2.188rem;
+    --font-size-aspect-title: 5rem;
+    --font-size-info-title: 3.125rem;
+}
+                        </code></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-container">
+        <div class="best-practice-container">
+            <h4>Best Practices</h4>
+
+            <div class="best-practice-grid">
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-purple">
+                        <h5>Einheiten</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Nutze relative Einheiten, um die Anpassungsfähigkeit und Skalierbarkeit des Codes zu verbessern.
+                            Dies unterstützt auch die Lesbarkeit, da einige Nutzer in ihren Browsern eine angepasste Basis-Schriftgröße
+                            eingestellt haben. Relative Einheiten passen sich automatisch an diese Basisgröße an und gewährleisten so
+                            eine konsistente Benutzererfahrung.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-blue">
+                        <h5>Basisgröße</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Eine Basis-Schriftgröße von 16px bis 18px gewährleistet eine gute Lesbarkeit auf den meisten Geräten und dient
+                            als solide Grundlage für die flexible Skalierung von Schriftgrößen im gesamten Layout.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-red">
+                        <h5>Hierarchie</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Die Schriftgröße spielt eine entscheidende Rolle bei der Lenkung der Aufmerksamkeit der Nutzer.
+                            Größere Schriftgrößen für Überschriften und zentrale Elemente schaffen eine klare Struktur und
+                            erleichtern den intuitiven Lesefluss.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-green">
+                        <h5>Skalierung</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Definiere zunächst eine Hierarchie für Überschriften, Fließtext und andere Textelemente, basierend
+                            auf einer skalierenden Proportion wie der goldenen Ratio oder einem anderen harmonischen Wert.
+                            Anschließend lassen sich die Größen bei Bedarf feinjustieren.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="website-links">
+        <h4>Nützliche Webseiten</h4>
+
+        <div class="links-container">
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-red">
+                        <h5>Modularscale</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Tool</h6>
+                        <p>Modulare Schriftgrößen Skalierung</p>
+                        <a href="https://www.modularscale.com/" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-purple">
+                        <h5>MDN Web Docs</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Dokumentation</h6>
+                        <p>Information zu font sizing und Einheiten</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+
+                <div class="link-card">
+                    <div class="link-card-top card-color-green">
+                        <h5>Natsumi</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Blog</h6>
+                        <p>Informationen zu Hierarchie von Schrift</p>
+                        <a href="https://www.natsuminishizumi.com/blog/typographic-hierarchy" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-blue">
+                        <h5>Typescale</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Tool</h6>
+                        <p>Verschiedene Schriftgrößen ausprobieren</p>
+                        <a href="https://typescale.com/" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Typographie im Web</p>
+                <p>Ein Projekt an der Technischen Hochschule Köln</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
