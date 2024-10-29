@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typographie im Web</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="../assets/styles/reset.css">
+    <link rel="stylesheet" href="../assets/styles/base.css">
+    <link rel="stylesheet" href="../assets/styles/header.css">
+    <link rel="stylesheet" href="../assets/styles/footer.css">
+    <link rel="stylesheet" href="../assets/styles/variables.css">
+    <link rel="stylesheet" href="../assets/styles/fonts.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-intro.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-information.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-best-practice.css">
+    <link rel="stylesheet" href="../assets/styles/aspect-page-website-links.css">
+    <link rel="stylesheet" href="../assets/styles/code-snippet.css">
+</head>
+
+<body>
+    <header class="primary-header">
+        <a class="logo" href="../index.html"><img src="../assets/img/typography-logo.png" alt="Typography Logo"></a>
+        <a class="nav-button" href="imprint.html">Impressum</a>
+    </header>
+
+    <div class="title-head">
+
+        <div class="title-info">
+            <div class="title-info-inner">
+                <h1>Responsive Typography</h1>
+                <p>Schriftgrößen dynamisch an Bildschirme anpassen</p>
+            </div>
+        </div>
+        <div class="title-image">
+            <img src="../assets/img/lauren-mancke-qc3sE5lGLbA-unsplash.jpg" alt="Responsive">
+        </div>
+
+    </div>
+
+    <div class="center-container">
+        <div class="evaluation-container">
+            <div class="evaluation-grid">
+                <div class="evaluation-title black-box evaluation-card">
+                    <h2>Bewertung</h2>
+                    <p>Hilfreiche Einschätzung der Schwierigkeit</p>
+                </div>
+                <div class="evaluation-first blue-box evaluation-card">
+                    <h3>Nutzen ★★★★★</h3>
+                    <p>Wie relevant und hilfreich ist es?</p>
+                </div>
+                <div class="evaluation-second red-box evaluation-card">
+                    <h3>Aufwand ★★★☆☆</h3>
+                    <p>Wie schwer ist es anzuwenden?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-container">
+        <div class="information-text-container">
+
+            <div class="info-point">
+                <h4>Was ist responsive Typografie?</h4>
+                <p>
+                    Responsive Typographie beschreibt den Ansatz, Schrift auf Webseiten so zu gestalten, dass sie sich optimal an verschiedene
+                    Bildschirmgrößen anpasst. Da Webseiten auf immer mehr Geräten ( von Smartphones über Tablets bis hin zu großen Desktop-Bildschirmen )
+                    angezeigt werden, ist es wichtig, dass Texte auf all diesen Geräten lesbar und gut strukturiert sind. Die Idee hinter responsiver
+                    Typographie ist also, nicht nur das Layout, sondern auch die Typografie dynamisch an die jeweilige Bildschirmgröße anzupassen. Dabei
+                    bleibt die visuelle Hierarchie erhalten und wird so gestaltet, dass sie die Lesbarkeit und Benutzerfreundlichkeit auf jedem Gerät optimiert.
+                </p>
+            </div>
+
+            <div class="info-point">
+                <h4>Umsetzung</h4>
+                <p>
+                    Responsive Typografie lässt sich auf verschiedene Weise umsetzen. Alle genannten Methoden basieren auf der Information von Font Sizing
+                    und den relativen Einheiten. Hier sind einige Ansätze, mit denen sich Schrift auf einer Webseite responsiv gestalten lässt:
+                </p>
+
+                <p>
+                    Media Queries ermöglichen es, gezielte Anpassungen der Typografie für bestimmte Bildschirmgrößen vorzunehmen. So lassen sich etwa Schriftgröße
+                    und Zeilenhöhe für kleinere Displays anpassen, um die Lesbarkeit zu optimieren. Hierbei werden Breakpoints definiert (Schwellenwerte), ab denen
+                    spezifische Stilregeln greifen. Oft werden sie in Kombination mit skalierbaren Einheiten verwendet, um für jede wichtige Bildschirmgröße eine
+                    passende Schriftgröße und -hierarchie festzulegen.
+                </p>
+
+                <p>
+                    Die CSS Calc() Funktion erlaubt es, mathematische Berechnungen direkt in CSS durchzuführen. Hier werden die verschiedenen Einheiten 
+                    (px, em, rem, %, vw, vh) miteinander kombiniert, um eine relative Schriftgröße zu berechnen. Dies erlaubt es Schrift an verschiedene Bildschirmgrößen anzupassen.
+                    Da Calc() es ermöglicht fixe Größen mit viewport-basierten Einheiten zu kombinieren, wird diese Methode oft mit fluider Typografie verbunden.
+                </p>
+
+                <p>
+                    Die Clamp Funktion ist ein weiteres CSS Werkzeug, welches sich ideal für responsive Typografie eignet. Sie erlaubt es Schriftgrößen dynamisch innerhalb
+                    einer definierten Spanne zu skalieren. Abhängig von der Bildschirmgröße wächst oder schrumpft die Schrift innerhalb 2 Werten. Im Gegensatz zu Media Queries,
+                    gibt es hier keine harten Sprünge von einer Größe auf die andere. Alle definierten Schriften innerhalb der Clamp Funktion passen sich dynamisch an.
+                </p>
+
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Ein Beispiel von Media Queries */
+/* Basis-Stile für alle Bildschirmgrößen */
+body {
+    font-size: 16px;  /* Standardgröße für größere Bildschirme */
+    line-height: 1.5; /* Standard Zeilenhöhe */
+}
+
+/* Media Query für große Displays (ab 1025px) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 16px;  /* Größere Schriftgröße für optimale Lesbarkeit */
+        line-height: 1.6; /* Weitere Erhöhung der Zeilenhöhe */
+    }
+}
+
+/* Media Query für mittlere Displays (zwischen 601px und 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: calc(1rem + 1.5vw); /* Moderate Anpassung der Schriftgröße */
+        line-height: 1.45; /* Optimierung der Zeilenhöhe */
+    }
+}
+
+/* Media Query für kleinere Displays (max. 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;  /* Kleinere Schriftgröße für bessere Lesbarkeit */
+        line-height: 1.4; /* Etwas engere Zeilenhöhe */
+    }
+}
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Ein Beispiel zu calc() */
+body {
+    font-size: calc(16px + 1vw); /* Kombination von fixen und viewport-basierten Einheiten */
+    line-height: 1.5; /* Standard Zeilenhöhe */
+}
+
+h1 {
+    font-size: calc(2rem + 2vh); /* Verwendung von rem und vh für responsive Schriftgröße */
+}
+
+p {
+    font-size: calc(12px + 0.5em); /* Kombination von fixen und relativen Einheiten */
+    line-height: calc(1.5em + 1px); /* Flexible Zeilenhöhe */
+}
+
+/* Ein Beispiel zu clamp() */
+body {
+    font-size: clamp(1rem, 2vw + 1rem, 2rem); /* Schriftgröße zwischen 1rem und 2rem */
+    line-height: 1.5; /* Standard Zeilenhöhe */
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw + 1rem, 4rem); /* Schriftgröße für h1-Elemente */
+}
+
+p {
+    font-size: clamp(0.875rem, 1.5vw + 0.5rem, 1.25rem); /* Schriftgröße für p-Elemente */
+    line-height: clamp(1.2, 1.5vw + 1, 1.6); /* Flexible Zeilenhöhe */
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>Skalierung der Hierarchie</h4>
+                <p>
+                    Die visuelle Hierarchie der Typografie unterscheidet sich auf großen und kleinen Bildschirmen vor allem aufgrund des verfügbaren Platzes.
+                    Auf großen Bildschirmen steht mehr Platz zur Verfügung, wodurch Überschriften und verschiedene Textelemente großzügiger und deutlich
+                    unterscheidbar gestaltet werden können. Auf kleinen Bildschirmen hingegen ist der Platz begrenzt, was bedeutet, dass die typografische
+                    Hierarchie angepasst werden muss, um Lesbarkeit und Verständlichkeit zu gewährleisten, ohne die Inhalte zu überladen.
+                </p>
+
+                <p>
+                    Die wichtigsten Elemente sollten nach wie vor klar hervorgehoben werden, um die semantische Hierarchie aufrechtzuerhalten.
+                    Eine Möglichkeit, dies zu erreichen, besteht darin, die modulare Skala zu verkleinern, wodurch die Abstände zwischen den
+                    Schriftgrößen verringert werden. Die grundlegende Hierarchie bleibt dabei unverändert, auch wenn die Schriftgrößen angepasst
+                    werden. Darüber hinaus ermöglichen die zuvor genannten Methoden, alle Größen problemlos zu reduzieren oder zu vergrößern,
+                    um eine optimale Lesbarkeit und Struktur zu gewährleisten. Es ist auf jeden Fall ratsam, die Grundidee des Designs zu überprüfen
+                    und die Bedeutung sowie die Funktion aller Textelemente noch einmal zu klären.
+                </p>
+
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Grundskala */
+/* Basis-Schriftgröße: 16px */
+/* Ratio: 1.2 */
+
+/* 
+1:  0.694rem      6:  1.728rem
+2:  0.833rem      7:  2.074rem
+3:  1rem          8:  2.488rem          
+4:  1.2rem        9:  2.986rem
+5:  1.44rem       10: 3.583rem
+*/
+
+/* 
+    Haupttitel = 3.583rem 
+    Sekundärer Titel = 2.074rem 
+    Absatz = 1.2rem 
+    Basis = 1rem 
+    Infoschnipsel = 0.833rem 
+*/
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-html">
+/* Angepasste Skala für kleine Bildschirme */
+/* Hier mit feinjustierung */
+/* Grundskala */
+/* Basis-Schriftgröße: 16px */
+/* Ratio: 1.15 */
+
+/* 
+1:  0.694rem      6:  1.521rem
+2:  0.833rem      7:  1.749rem
+3:  1rem          8:  2.011rem        
+4:  1.15rem       9:  2.313rem
+5:  1.322rem     10:  2.66rem
+*/
+
+/* 
+    Haupttitel = 2.66rem
+    Sekundärer Titel = 1.749rem 
+    Absatz = 1.15rem 
+    Basis = 1rem 
+    Infoschnipsel = 0.833rem 
+*/
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-point">
+                <h4>Responsive Typografie auf dieser Webseite?</h4>
+                <p>
+                    Da diese Webseite viel Text enthält und voraussichtlich von zahlreichen Nutzern auf verschiedenen Geräten besucht wird,
+                    spielt der Aspekt der responsiven Typografie eine zentrale Rolle. Um den Text responsiv zu gestalten, wurden hauptsächlich
+                    zwei Methoden eingesetzt: Zum einen wurde die ursprüngliche Skalierung von 1.125 durch Media Queries für mittlere und kleine
+                    Bildschirme angepasst. Diese Vorgehensweise ermöglicht es, die beiden Bildschirmgrößen zu vereinen, ohne die Lesbarkeit zu
+                    beeinträchtigen. Zum anderen kam die clamp()-Funktion für alle Fließtexte auf den Informationsseiten zum Einsatz.
+                    Hier wurde eine dynamische Schriftgröße mit der fluiden Einheit vw erstellt, die sich automatisch an die jeweilige Bildschirmgröße anpasst.
+                </p>
+                    
+                <p>
+                    Die Hierarchie innerhalb der Media Queries wurde manuell optimiert, wobei darauf geachtet wurde, dass die kleineren Schriftgrößen
+                    unverändert bleiben. Mittlere Schriftgrößen wurden angeglichen, da sie eine ähnliche semantische Wichtigkeit haben und auf kleinen
+                    Bildschirmgrößen ähnlich wirken sollen. Bei diesem Design wurde auf die calc()-Funktion verzichtet, da sie in diesem Kontext weniger vorteilhaft ist:<br>
+                    Während calc() nützlich sein kann, um komplexe mathematische Berechnungen für fluide Texte durchzuführen, bieten Media Queries eine präzisere Kontrolle
+                    über spezifische Breakpoints. Da es nur eine Media Query für sowohl kleine als auch mittlere Bildschirme gibt, war calc() nicht notwendig. Im
+                    Vergleich dazu sorgt die clamp()-Funktion für eine flüssigere, kontinuierliche Anpassung der Schriftgröße, die besser für den großen Textanteil
+                    der Webseite geeignet ist.
+                </p>
+                
+                <div class="code-container">
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Media Querie auf dieser Webseite */
+:root {
+    /* font size */
+    --font-size-base: 1rem;
+    --font-size-xs: 0.938rem;
+    --font-size-s: 1.5rem;  
+    --font-size-m: 3.125rem;  
+    --font-size-l: 3.5rem;  
+    --font-size-xl: 6.25rem; 
+
+    --font-size-title-text: 2.188rem;
+    --font-size-aspect-title: 5rem;
+    --font-size-info-title: 3.125rem;
+
+    --font-size-code-snippet: .875rem;
+}
+
+/* font sizes for smaller screens*/
+@media (max-width: 1000px) {
+    :root {
+        --font-size-xs: 0.938rem; 
+        --font-size-s: 1.5rem;  
+        --font-size-m: 3.125rem;  
+        --font-size-l: 3.125rem;  
+        --font-size-xl: 3.75rem;
+
+        --font-size-title-text: 1.563rem;
+        --font-size-aspect-title: 3.75rem;
+        --font-size-info-title: 2.5rem;
+
+        --font-size-code-snippet: 0.813rem;
+    }
+}
+                        </code></pre>
+                    </div>
+                    <div class="code-snippet">
+                        <pre><code class="language-css">
+/* Clamp Funktion für Fließtexte */
+:root {
+    --font-size-text: clamp(1.1875rem, 0.875rem + 0.5vw, 1.375rem);
+}
+
+
+/* Hier ein Beispiel wie man fluide Typografie mit clamp() erreichen kann */
+/* Dies ist nur Ein Beispiel und wurde nicht auf dieser Seite verwendet */
+
+/* vi ist eine relative Einheit und steht für 1% der Viewportabmessung in Inline-Richtung */
+:root { 
+    --font-size-base: clamp(1rem, 0.625vi + 0.688rem, 1.188rem);
+
+    --font-size-s: clamp(0.909rem, 0.188vi + 0.815rem, 0.965rem);
+    --font-size-m: clamp(1.1rem, 1.202vi + 0.499rem, 1.461rem);
+    --font-size-l: clamp(1.21rem, 1.955vi + 0.232rem, 1.797rem);
+    --font-size-xl: clamp(1.331rem, 2.929vi + -0.134rem, 2.21rem);
+    --font-size-xxl: clamp(1.464rem, 4.18vi + -0.626rem, 2.718rem);
+    --font-size-xxxl: clamp(1.611rem, 5.776vi + -1.277rem, 3.343rem);
+}
+
+
+/* Auch mit calc() kombinierbar */
+:root {
+    --font-size-base: clamp(0.8rem, 2vw, 1.3rem);
+
+    --font-size-s: calc(var(--font-size-base) * 0.5);
+    --font-size-m: calc(var(--font-size-base) * 1);
+    --font-size-l: calc(var(--font-size-base) * 1.5);
+    --font-size-xl: calc(var(--font-size-base) * 2.2);
+    --font-size-xxl: calc(var(--font-size-base) * 3);
+    --font-size-xxxl: calc(var(--font-size-base) * 4);
+}
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="center-container">
+        <div class="best-practice-container">
+            <h4>Best Practices</h4>
+
+            <div class="best-practice-grid">
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-purple">
+                        <h5>Basis</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Setze die Basis-Schriftgröße auf dem Root-Element und passe sie bei Bedarf mit Media Queries an.
+                            Verwende dabei zuerst die rem Einheit um konsistente Größen zu haben. Anschließend kannst du die
+                            em Einheit für verschachtelte Elemente nutzen, damit sich diese relativ zum Elternelement skalieren.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-blue">
+                        <h5>Adaptiv</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Media Queries sind auf bestimmte Breakpoints beschränkt, was zwar individuelle Anpassungen für Textelemente ermöglicht,
+                            jedoch auch zu abrupten Sprüngen im Design führen kann. Im Gegensatz dazu skaliert die clamp()-Funktion die Schriftgröße
+                            dynamisch und eignet sich hervorragend für Fließtexte. Es ist ratsam, verschiedene Methoden entsprechend deiner Designziele
+                            zu nutzen und sie bei Bedarf zu kombinieren, um ein harmonisches und responsives Layout zu erreichen.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-red">
+                        <h5>Variablen</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Definiere Schriftgrößen als Custom Properties und verwende Media Queries oder andere Methoden, um diese Variablen
+                            je nach Bildschirmgröße anzupassen. So kannst du Schriftgrößen global steuern und Änderungen effizient vornehmen.</p>
+                    </div>
+                </div>
+
+                <div class="best-practice-card">
+                    <div class="best-practice-card-top card-color-green">
+                        <h5>Hierarchie</h5>
+                    </div>
+                    <div class="best-practice-card-bottom">
+                        <p> Durch die Anpassung der verwendeten Skala kann eine konsistente Hierarchie beibehalten werden.
+                            Zudem lassen sich auch andere Achsen der Schrift modifizieren, um die Hierarchie weiterhin klar
+                            und deutlich darzustellen. Experimentiere mit verschiedenen Möglichkeiten, um Schriftarten anzupassen.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="website-links">
+        <h4>Nützliche Webseiten</h4>
+
+        <div class="links-container">
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-red">
+                        <h5>Fluid T.</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Tool</h6>
+                        <p>Information und Generator für fluide Schrift</p>
+                        <a href="https://fluidtypography.com/#usarusFluidTypographyGetStarted" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-purple">
+                        <h5>iA</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Blog</h6>
+                        <p>Information zu Typografie auf verschiedene Bildschirme</p>
+                        <a href="https://ia.net/topics/responsive-typography-the-basics" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+
+                <div class="link-card">
+                    <div class="link-card-top card-color-green">
+                        <h5>Imperavi</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Artikel</h6>
+                        <p>Information zu responsiver Hierarchie</p>
+                        <a href="https://imperavi.com/books/ui-typography/principles/responsive-typography/" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-links">
+                <div class="link-card">
+                    <div class="link-card-top card-color-blue">
+                        <h5>LogRocket</h5>
+                    </div>
+                    <div class="link-card-bottom">
+                        <h6>Blog</h6>
+                        <p>Information zu Clamp und fluider Skala</p>
+                        <a href="https://blog.logrocket.com/fluid-vs-responsive-typography-css-clamp/" class="button">Ausprobieren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <p>Typographie im Web</p>
+                <p>Ein Projekt an der Technischen Hochschule Köln</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
