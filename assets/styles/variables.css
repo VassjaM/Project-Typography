@@ -95,6 +95,11 @@
     
 }
 
+@media (max-width: 1400px) {
+    :root {
+        --font-size-aspect-title: 3.30rem;
+    }
+}
 
 
 
@@ -107,7 +112,6 @@
         --font-size-l: 3.125rem;  
         --font-size-xl: 3.75rem;
         --font-size-title-text: 1.563rem;
-        --font-size-aspect-title: 3.75rem;
         --font-size-info-title: 2.5rem;
         --font-size-code-snippet: 0.813rem;
     }
