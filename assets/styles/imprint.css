@@ -1,0 +1,158 @@
+/* styles for imprint page */
+
+br {
+    display: none;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 168px;
+    padding-bottom: 168px;
+}
+
+.imprint-center-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 8em;
+    max-width: 1200px;
+    width: 60%;
+    justify-self: center;
+}
+ 
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.contact h2 {
+    padding-bottom: 40px;
+    line-height: var(--catch-title-line-height);
+    letter-spacing: var(--h4-header-spacing);
+}
+
+.contact p {
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-medium);
+    padding-bottom: 20px;
+}
+
+
+.contact a {
+    text-decoration: none;
+    color: var(--color-email);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-medium);
+}
+
+
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.info h2 {
+    padding-bottom: 40px;
+    line-height: var(--catch-title-line-height);
+    letter-spacing: var(--h4-header-spacing);
+}
+
+.info h3 {
+    align-self: center;
+    padding-bottom: 40px;
+    font-size: var(--font-size-link-card-top);
+    line-height: var(--catch-title-line-height);
+    letter-spacing: var(--h4-header-spacing);
+}
+
+.info p {
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-regular);
+    color: var(--text);
+    padding-bottom: 30px;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+.links a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: var(--font-size-text);
+    font-weight: var(--font-weight-medium);
+    background-color: var(--color-catch-title);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.links a:hover {
+    background-color: var(--secondary);
+    color: var(--color-catch-title);
+}
+
+
+/* responsive size for smaller screen sizes */
+@media screen and (max-width: 1000px) {
+    .intro {
+        padding: 113px 20px;
+        margin: 0; 
+    }
+
+    .intro p {
+        padding-top: 20px;
+    }
+
+    .imprint-center-container {
+        margin: 0 6%;
+        width: 80%;
+    }
+
+    .contact{
+        margin-bottom: 80px;
+    }
+
+    .info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+    }
+    
+}
+
+
+@media screen and (max-width: 800px) {
+
+    br {
+        display: block;
+    }
+
+    .imprint-center-container {
+        margin: 0 20px;
+        width: 90%;
+    }
+
+    .contact h2 {
+        padding-bottom: 30px;
+    }
+
+    .contact p {
+        padding-bottom: 15px;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+}

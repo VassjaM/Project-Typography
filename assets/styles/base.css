@@ -48,3 +48,15 @@ p {
     hyphens: auto; 
   }
   
+.button {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    display: flex;
+    width: 119px;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 8px;
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-semi-bold);
+}
