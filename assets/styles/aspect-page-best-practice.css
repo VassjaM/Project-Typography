@@ -31,6 +31,7 @@
     border-top-right-radius: 1rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
+    min-width: -webkit-fill-available;
 }
 
 .best-practice-card-top {
